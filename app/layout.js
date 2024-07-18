@@ -3,6 +3,8 @@ import "@css/plugins.css";
 import "@css/style.css";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 export const metadata = {
   title: "Saravan - Freelancer",
@@ -15,6 +17,8 @@ export default function RootLayout({ children }) {
       <body>
         <Preloader />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
