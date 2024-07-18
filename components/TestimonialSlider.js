@@ -150,5 +150,5 @@ export default class TestimonialSlider extends Component {
 
 TestimonialSlider.defaultProps = {
   title: "Satisfied clients",
-  sectionNumber: "06",
+  sectionNumber: "05",
 };

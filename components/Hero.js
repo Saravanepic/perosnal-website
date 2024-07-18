@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
             <div className="right">
               <h3>
-                <span className="inline_text">Web developer</span>
+                <span className="inline_text">Freelance WEB<br/>developer</span>
               </h3>
               <h3 className="stroke_text">Based in Bangalore</h3>
             </div>
@@ -48,7 +48,7 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>About me</h3>
                     <p>
-                      Hello, my name’s Saravan, I'm a versatile web developer with expertise in front-end development and a broad experience across various platforms
+                      Hello, my name’s <b>Saravan</b>, I'm a versatile <b>Dynamic and Creative Freelance web developer</b> with expertise in front-end development and a broad experience across various platforms.
                     </p>
                   </div>
                   <div className="info_list">

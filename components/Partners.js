@@ -15,7 +15,7 @@ const Partners = ({ title = "Customers", sectionNumber = "06" }) => {
             <div className="center">
               <p>
                 My journey began with a fascination for the digital world to
-                make it more beautiful and accessible. With a degree and over half a decade of experience,
+                make it more beautiful and accessible. Building top-notch responsive websites and web applications that impact millions of lives.
               </p>
             </div>
             <div className="right">

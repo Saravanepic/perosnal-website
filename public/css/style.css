@@ -721,6 +721,9 @@ img {
 .nicolas_sm_hero .left .info_list {
   margin-bottom: 130px;
 }
+.nicolas_sm_hero .left .info_list b{
+  color: #ffbd4a;
+}
 .nicolas_sm_hero .left .info_list:last-child {
   margin-bottom: 0;
 }
@@ -1117,7 +1120,7 @@ img {
   margin-left: -120px;
 }
 .nicolas_sm_portfolio .portfolio_in li {
-  width: 50%;
+  width: 33%;
   padding-left: 120px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1193,8 +1196,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   border: 1px solid #292a2a;
   border-radius: 6px;
 
@@ -3831,7 +3834,7 @@ img {
     font-size: 55px;
   }
   .nicolas_sm_portfolio .left h3 a {
-    font-size: 27px;
+    font-size: 22px;
   }
   .nicolas_sm_testimonials .nicolas_sm_main_title .center p {
     text-indent: 150px;
