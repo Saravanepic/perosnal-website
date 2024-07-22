@@ -17,7 +17,7 @@ const Header = () => {
     { id: 3, title: "service", href: "service" },
     { id: 4, title: "portfolio", href: "portfolio" },
     // { id: 5, title: "blog", href: "blog" },
-    { id: 5, title: "contact", href: "contact" },
+    // { id: 5, title: "contact", href: "contact" },
   ];
 
   return (

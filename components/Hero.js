@@ -55,7 +55,8 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>What i do</h3>
                     <p>
-                      Website Development / Shopify / Wordpress / React and Next JS / Consulatation etc.........
+                    <b>Transforming Ideas into Stunning Web Experience.</b> 
+                    <br/>Website Development / Shopify / Wordpress / React and Next JS / Consulatation etc.........
                     </p>
                   </div>
                 </div>

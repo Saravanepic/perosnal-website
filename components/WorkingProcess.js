@@ -8,7 +8,7 @@ const WorkingProcess = () => {
           </div>
           <div className="center">
             <p>
-              Over a decade of experience in interactive design and working with
+              Over a half of decade of experience in interactive design and working with
               some of the most talented people in the business
             </p>
           </div>

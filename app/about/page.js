@@ -9,7 +9,7 @@ const page = () => {
   return (
     <NikolasLayout>
       {/* Page_title */}
-      <div className="nicolas_sm_page_title">
+      <div className="nicolas_sm_page_title mb-0">
         <div className="container">
           <div className="page_title_in">
             <h3>
@@ -23,7 +23,7 @@ const page = () => {
       </div>
       {/* /Page_title */}
       {/* About_video */}
-      <div className="nicolas_sm_about_video">
+      {/* <div className="nicolas_sm_about_video">
         <div className="container">
           <div className="extra_container">
             <div className="video_box">
@@ -37,13 +37,13 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /About_video */}
       {/* About_me */}
       <About sectionTitle="ABOUT ME" nextSection="counter" />
       {/* /About_me */}
       {/* Counter */}
-      <div className="nicolas_sm_counter" id="counter">
+      {/* <div className="nicolas_sm_counter" id="counter">
         <div className="container">
           <div className="extra_container">
             <div className="counter_in">
@@ -148,7 +148,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /Counter */}
       {/* Experience */}
       <div className="nicolas_sm_experience">
@@ -177,7 +177,7 @@ const page = () => {
                   <p>As a Freelancer</p>
                 </div>
                 <div className="center">
-                  <p>Full time being me working with different agencies</p>
+                  <p>Currently working full-time, collaborating with various agencies.</p>
                 </div>
                 <div className="right">
                   <span>2022 - Present</span>
@@ -192,6 +192,29 @@ const page = () => {
                 </div>
                 <div className="right">
                   <span>2024 - Present</span>
+                </div>
+              </div>
+              <div className="list_inner">
+                <div className="left">
+                  <p>Genisys Group</p>
+                </div>
+                <div className="center">
+                  <p>Freelance Shopify Developer</p>
+                </div>
+                <div className="right">
+                  <span>2024 - Present</span>
+                </div>
+              </div>
+              <div className="list_inner">
+                <div className="left">
+                  <p>pimCloud</p>
+                </div>
+                <div className="center">
+                  <p>Front End Developer</p>
+                  <p className="fs-6">Helping in building a SASS product</p>
+                </div>
+                <div className="right">
+                  <span>2023 - Present</span>
                 </div>
               </div>
               <div className="list_inner">
@@ -244,11 +267,12 @@ const page = () => {
       </div>
       {/* /Experience */}
       
+        
       {/* About_testimonials */}
       <TestimonialSlider sectionNumber="" />
       {/* /About_testimonials */}
-      {/* About_partners */}
-      <Partners sectionNumber="" />
+       {/* About_partners */}
+      {/* <Partners sectionNumber="" /> */}
       {/* About_partners */}
     </NikolasLayout>
   );

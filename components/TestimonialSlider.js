@@ -28,7 +28,7 @@ export default class TestimonialSlider extends Component {
               </div>
               <div className="center">
                 <p>
-                  Happy customers give us impactfull and positive feedback
+                  Happy customers give impactfull and positive feedback
                   on my services, customer supports &amp; etc.
                 </p>
               </div>

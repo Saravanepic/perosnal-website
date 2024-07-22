@@ -1,7 +1,7 @@
 import Marquee from "react-fast-marquee";
 
 const About = ({
-  sectionTitle = "02 // About me",
+  sectionTitle = "02 // Discover More About Me",
   nextSection = "service",
 }) => {
   return (
@@ -14,8 +14,8 @@ const About = ({
             </div>
             <div className="center">
               <p>
-                Hello, my name’s Saravan Krishna, I’m a bay-area born developer
-                based in Bangalore.I’m currently working as a Freelance Web Developer with agencies, creating connected brands, product commerce, and engaging web experiences.
+                I’m a bay-area born developer
+                based in Bangalore. I’m currently working as a Freelance Web Developer with agencies and companie's, creating connected brands, product commerce, and engaging web experiences.
               </p>
             </div>
             <div className="right">
@@ -63,37 +63,28 @@ const About = ({
                 <img src="img/about/star.png" alt={1} />
               </div>
               <div>
-                <h3>3k+ success projects</h3>
+                <h3>100+ success projects</h3>
               </div>
               <div>
                 <img src="img/about/star.png" alt={1} />
               </div>
               <div>
-                <h3>2k+ happy clients</h3>
+                <h3>50+ happy clients</h3>
               </div>
               <div>
                 <img src="img/about/star.png" alt={1} />
               </div>
               <div>
-                <h3>30+ team members</h3>
+                <h3>50+ Ecommerce sites delivered</h3>
               </div>
               <div>
                 <img src="img/about/star.png" alt={1} />
               </div>
               <div>
-                <h3>3k+ success projects</h3>
+                <h3>3+ custom stack projects</h3>
               </div>
               <div>
                 <img src="img/about/star.png" alt={1} />
-              </div>
-              <div>
-                <h3>2k+ happy clients</h3>
-              </div>
-              <div>
-                <img src="img/about/star.png" alt={1} />
-              </div>
-              <div>
-                <h3>30+ team members</h3>
               </div>
             </div>
           </Marquee>

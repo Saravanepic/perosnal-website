@@ -14,13 +14,11 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
               </div>
               <div className="center">
                 <p>
-                  Our work builds more loyal audiences by combining an
-                  unwavering focus on their needs and desires, and our
-                  relentless pursuit of design excellence.
+                Building Loyal Audiences through User-Centric Design and Uncompromising Excellence
                 </p>
               </div>
               <div className="right">
-                <Link href="service">(( Service all ))</Link>
+                <Link href="service">(( All Services ))</Link>
               </div>
             </div>
             <div className="extra_container">

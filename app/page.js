@@ -4,6 +4,7 @@ import Blog from "@/components/Blog";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Portfolio from "@/components/Portfolio";
+import CurrentWork from "@/components/CurrentWork";
 import Pricing from "@/components/Pricing";
 import Service from "@/components/Service";
 import TestimonialSlider from "@/components/TestimonialSlider";
@@ -22,7 +23,8 @@ const page = () => {
       <Service />
       {/* /Service */}
       {/* Portfolio */}
-      <Portfolio />
+      <CurrentWork/>
+      {/* <Portfolio /> */}
       {/* /Portfolio */}
       {/* Testimonials */}
       <TestimonialSlider />
