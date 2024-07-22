@@ -23,28 +23,27 @@ const WorkingProcess = () => {
                 <div className="list_inner">
                   <span>/01</span>
                   <h3>
-                    <a href="#">
-                      Send up your <br />
+                    
+                      Send Up Your <br />
                       project
-                    </a>
+                    
                   </h3>
                   <p>
-                    Duis aute irure dolor in voluptate excepteur sint occaecat
-                    cupidatat none proident, sunt in officia deserunt mollit
-                    anim id est
+                    <b>Initial Consultation:</b> Discuss your project requirements, goals, and vision. <br/>
+                    <b>Project Submission:</b> Provide detailed information about your project, including any specific needs and design preferences.
                   </p>
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <span>/02</span>
-                  <h3>
-                    <a href="#">Get it delivered on time</a>
-                  </h3>
+                  <h3>Get It Delivered on Time</h3>
+                    
                   <p>
-                    Duis aute irure dolor in voluptate excepteur sint occaecat
-                    cupidatat none proident, sunt in officia deserunt mollit
-                    anim id est
+                    <b>Research & Planning:</b> Conduct thorough research and develop a strategic plan.<br/>
+                    <b>Development Phase:</b> Convert approved designs into a functional website, ensuring responsive design for all devices.<br/>
+                    <b>Testing:</b> Perform rigorous testing to identify and fix any issues.
+
                   </p>
                 </div>
               </li>
@@ -52,12 +51,13 @@ const WorkingProcess = () => {
                 <div className="list_inner">
                   <span>/03</span>
                   <h3>
-                    <a href="#">Take on more clients &amp; scale up</a>
+                    <a href="#">Launch &amp; Scale Up</a>
                   </h3>
                   <p>
-                    Duis aute irure dolor in voluptate excepteur sint occaecat
-                    cupidatat none proident, sunt in officia deserunt mollit
-                    anim id est
+                    <b>Launch:</b> Deploy the website to the live server and conduct final checks. <br/>
+                    <b>Training & Handover:</b> Provide training on managing the website and deliver necessary documentation. <br/>
+                    <b>Support & Maintenance:</b> Offer ongoing support to ensure smooth operation and address any issues. <br/>
+                    <b>Scale Up:</b> Implement strategies to help your website grow and reach a larger audience.
                   </p>
                 </div>
               </li>

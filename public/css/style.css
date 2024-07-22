@@ -1385,12 +1385,12 @@ img {
   padding-bottom: 30px;
 }
 .nicolas_sm_pricing .plan {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 .nicolas_sm_pricing .price {
-  font-size: 72px;
+  font-size: 32px;
   line-height: 1;
   margin-bottom: 23px;
 }
@@ -1416,7 +1416,7 @@ img {
   background-color: #ffbd4a;
   border-radius: 50%;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
 }
 .nicolas_sm_pricing .features p {
   padding-left: 18px;
@@ -2052,7 +2052,8 @@ img {
   max-height: 60px;
 }
 .nicolas_sm_experience {
-  padding-bottom: 95px;
+  padding-bottom: 0px;
+  padding-top: 80px;
 }
 .nicolas_sm_experience .nicolas_sm_main_title p {
   text-indent: 50px;
@@ -2183,6 +2184,19 @@ img {
   width: 33.3333%;
   padding-left: 26px;
   margin-bottom: 26px;
+}
+.nicolas_sm_process .list_inner p b {
+  display: inline-block;
+  color: #ffbd4a;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.nicolas_sm_process .list_inner p {
+  font-size: 14px;
+  line-height: 24px;
 }
 .nicolas_sm_process .list_inner {
   height: 100%;
@@ -3760,6 +3774,11 @@ img {
   .nicolas_sm_hero .hero_info_area .right {
     padding-left: 50px;
   }
+  .nicolas_sm_pricing .nicolas_sm_main_title .center p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
   .nicolas_sm_main_title .center p {
     font-size: 23px;
   }
@@ -4488,4 +4507,9 @@ img {
 }
 .pb-0{
   padding-bottom: 0;
+}
+@media all and (min-width:1200px){
+  .nicolas_sm_pricing .info_box{
+    min-height: 709px;
+  }
 }

@@ -30,7 +30,7 @@ const page = () => {
       <TestimonialSlider />
       {/* /Testimonials */}
       {/* Partners */}
-      <Partners />
+      {/* <Partners /> */}
       {/* /Partners */}
       {/* Pricing */}
       <Pricing />

@@ -7,12 +7,11 @@ const Pricing = () => {
         <div className="container">
           <div className="nicolas_sm_main_title">
             <div className="left">
-              <span>07 // Pricing plan</span>
+              <span>06 // Pricing plan</span>
             </div>
             <div className="center">
               <p>
-                Your pricing page is a prime opportunity to take control of the
-                price conversation and make it even easier for people to buy.
+              Package includes 2 weeks of post-launch support to address any issues and ensure smooth operation. Additional pages can be added for an extra cost, and clients are expected to provide the content and images for the website. Upon consultation, a detailed project timeline will be provided to outline the development process and ensure timely delivery.
               </p>
             </div>
             <div className="right">
@@ -26,33 +25,44 @@ const Pricing = () => {
                   <div className="list_inner">
                     <div className="info_box">
                       <div className="info">
-                        <h3 className="plan">Basic Plan</h3>
+                        <h3 className="plan">Shopify Website</h3>
                         <h3 className="price">
-                          $25<span>/ month</span>
+                          $1000<span>/ website</span>
                         </h3>
-                        <p>10% taxes will include after make price</p>
                       </div>
                       <div className="features">
                         <ul>
-                          <li>
+                        <li>
                             <span />
-                            <p>Web Development</p>
+                            <p>Pages Included: 5 to 7</p>
                           </li>
                           <li>
                             <span />
-                            <p>Mobile Development</p>
+                            <p>1 - 2 Weeks Delivery</p>
                           </li>
                           <li>
                             <span />
-                            <p>Advetising</p>
+                            <p>Custom Shopify theme setup</p>
                           </li>
                           <li>
                             <span />
-                            <p>Graphic design</p>
+                            <p>Mobile-responsive design</p>
                           </li>
                           <li>
                             <span />
-                            <p>Project management</p>
+                            <p>Basic SEO optimization</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Integration with essential apps</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Blog setup</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Additional Templtes - 100$ / template</p>
                           </li>
                         </ul>
                       </div>
@@ -66,7 +76,7 @@ const Pricing = () => {
                           alt={1}
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="#" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Shopify Website" />
                     </div>
                   </div>
                 </li>
@@ -74,33 +84,48 @@ const Pricing = () => {
                   <div className="list_inner">
                     <div className="info_box">
                       <div className="info">
-                        <h3 className="plan">Standart</h3>
+                        <h3 className="plan">WordPress Website</h3>
                         <h3 className="price">
-                          $75<span>/ month</span>
+                          $750<span>/ website</span>
                         </h3>
-                        <p>10% taxes will include after make price</p>
                       </div>
                       <div className="features">
                         <ul>
                           <li>
                             <span />
-                            <p>Web Development</p>
+                            <p>Pages Included: 5</p>
                           </li>
                           <li>
                             <span />
-                            <p>Mobile Development</p>
+                            <p>1 - 2 Weeks Delivery</p>
                           </li>
                           <li>
                             <span />
-                            <p>Advetising</p>
+                            <p>WordPress theme setup</p>
                           </li>
                           <li>
                             <span />
-                            <p>Graphic design</p>
+                            <p>Mobile-responsive design</p>
                           </li>
                           <li>
                             <span />
-                            <p>Project management</p>
+                            <p>Basic SEO optimization</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Installation of necessary plugins</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Contact form integration</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Blog setup</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Additional Templtes - 100$ / template</p>
                           </li>
                         </ul>
                       </div>
@@ -114,7 +139,7 @@ const Pricing = () => {
                           alt={1}
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="#" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Wordpress Website" />
                     </div>
                   </div>
                 </li>
@@ -122,33 +147,36 @@ const Pricing = () => {
                   <div className="list_inner">
                     <div className="info_box">
                       <div className="info">
-                        <h3 className="plan">Gold Plan</h3>
+                        <h3 className="plan">Custom Development</h3>
                         <h3 className="price">
-                          $125<span>/ month</span>
+                          $25 - $30<span>/ hour</span>
                         </h3>
-                        <p>10% taxes will include after make price</p>
                       </div>
                       <div className="features">
                         <ul>
                           <li>
                             <span />
-                            <p>Web Development</p>
+                            <p>Tailored solutions based on specific requirements</p>
                           </li>
                           <li>
                             <span />
-                            <p>Mobile Development</p>
+                            <p>Custom plugin or app development</p>
                           </li>
                           <li>
                             <span />
-                            <p>Advetising</p>
+                            <p>Third-party API integration</p>
                           </li>
                           <li>
                             <span />
-                            <p>Graphic design</p>
+                            <p>Performance optimization</p>
                           </li>
                           <li>
                             <span />
-                            <p>Project management</p>
+                            <p>Regular updates and maintenance</p>
+                          </li>
+                          <li>
+                            <span />
+                            <p>Technical support and troubleshooting</p>
                           </li>
                         </ul>
                       </div>
@@ -162,7 +190,7 @@ const Pricing = () => {
                           alt={1}
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="#" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Need help with custom development" />
                     </div>
                   </div>
                 </li>

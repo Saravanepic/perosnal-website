@@ -28,7 +28,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">I</span>
-                        <h3 className="title">UX/UI Design</h3>
+                        <h3 className="title"> Shopify Website Development</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -43,7 +43,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">II</span>
-                        <h3 className="title">Graphic Design</h3>
+                        <h3 className="title">Wordpress Website Development</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -58,7 +58,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">III</span>
-                        <h3 className="title">Branding Design</h3>
+                        <h3 className="title">Website Development (via builders)</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -73,7 +73,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">IV</span>
-                        <h3 className="title">Motion Design</h3>
+                        <h3 className="title">Front End (Design to HTML)</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -88,7 +88,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">V</span>
-                        <h3 className="title">Market Analysis</h3>
+                        <h3 className="title">Custom App / JS Solutions</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"

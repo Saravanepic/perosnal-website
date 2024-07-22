@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
           <div className="hero_scroll_title">
             <span>
-              01 // 09 - scroll{" "}
+              01 // 06 - scroll{" "}
               <img
                 className="sm_svg bounce"
                 src="img/svg/down_arrow.svg"
