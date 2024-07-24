@@ -247,6 +247,12 @@ const wordpressprojectsData = [
     tag:"Wordpress ",
     url:"https://brilliantprep.com/",
   },
+  {
+    id: 14,
+    name: "ZR-DKA",
+    tag:"Wordpress | Support ",
+    url:"https://zr-dka.com/",
+  },
 
 ]
 const otherprojectsData = [
@@ -255,6 +261,12 @@ const otherprojectsData = [
     name: "Travel Earth",
     tag:"FIGMA Design | Development Mentorship",
     url:"https://travel.earth/",
+  },
+  {
+    id: 0,
+    name: "Beyond Food Bars",
+    tag:"Dukaan | Support",
+    url:"https://beyondfoodbars.com/",
   },
   {
     id: 1,
