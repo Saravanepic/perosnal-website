@@ -33,12 +33,6 @@ const shopifyprojectsData = [
     url:"https://keikanaturals.com/",
   },
   {
-    id: 6,
-    name: "Keika Naturals",
-    tag:"Shopify | Custom UI",
-    url:"https://keikanaturals.com/",
-  },
-  {
     id: 7,
     name: "Castle Beds",
     tag:"Shopify | Custom UI",
@@ -241,8 +235,27 @@ const wordpressprojectsData = [
     tag:"Wordpress | Custom Developemnt | Support Works",
     url:"https://jmrinfotech.com/",
   },
+  {
+    id: 12,
+    name: "JMR Sporting",
+    tag:"Wordpress | Woo Commerce",
+    url:"https://krakensports.ca/",
+  },
+  {
+    id: 13,
+    name: "Brilliant Prep",
+    tag:"Wordpress ",
+    url:"https://brilliantprep.com/",
+  },
+
 ]
 const otherprojectsData = [
+  {
+    id: 0,
+    name: "Travel Earth",
+    tag:"FIGMA Design | Development Mentorship",
+    url:"https://travel.earth/",
+  },
   {
     id: 1,
     name: "Ranadey",

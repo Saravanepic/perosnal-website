@@ -4544,9 +4544,11 @@ img {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 0;
-  max-height: 550px;
+  padding: 20px;
+  max-height: 500px;
   overflow: scroll;
+  border: 1px solid #2f3030;
+  border-radius: 10px;
 }
 
 .shopify_projects_wrapper li {
@@ -4556,7 +4558,7 @@ img {
   background: #1b1d1f;
   padding: 20px 30px;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
