@@ -139,6 +139,26 @@ export default class TestimonialSlider extends Component {
                     </div>
                   </div>
                 </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                      <p>
+                      Working with Saravan has been an absolute pleasure. He’s not just a website developer; he’s a magician who turns your website dreams into reality. His speed and efficiency are incredible – he understands the importance of deadlines and never fails to deliver on time. Saravan’s coding expertise is top-notch, ensuring everything runs smoothly and looks fantastic.
+                      <br/>What sets Saravan apart is his professionalism combined with a great sense of humor. He makes the whole process enjoyable and stress-free. If you’re looking for someone who is fast, reliable, and genuinely great to work with, Saravan is your guy. Highly recommend!
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/2.jpg" alt={2} />
+                      </div>
+                      <div className="job">
+                        <h3>NAINA SOLANKI</h3>
+                        <span>Founder, HFO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </Slider>
             </div>
           </div>
