@@ -49,7 +49,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/1.jpg" alt={1} />
+                    <img src="img/portfolio/taproots.png" alt={1} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -73,7 +73,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/2.jpg" alt={2} />
+                    <img src="img/portfolio/mutual.png" alt={2} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -97,7 +97,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/3.jpg" alt={3} />
+                    <img src="img/portfolio/ENVSN.png" alt={3} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -145,7 +145,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/5.jpg" alt={5} />
+                    <img src="img/portfolio/EG.png" alt={5} />
                   </div>
                   <div className="title_holder">
                     <div className="left">

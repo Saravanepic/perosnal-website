@@ -56,7 +56,7 @@ const Hero = () => {
                     <h3>What i do</h3>
                     <p>
                     <b>Transforming Ideas into Stunning Web Experience.</b> 
-                    <br/>Website Development / Shopify / Wordpress / React and Next JS / Consulatation etc.........
+                    <br/>Website Development / Shopify / Wordpress / Woocommerce / Dukaan / React and Next JS / Website Consulatation etc.........
                     </p>
                   </div>
                 </div>

@@ -231,13 +231,13 @@ const wordpressprojectsData = [
   },
   {
     id: 11,
-    name: "JMR Sporting",
+    name: "JMR Infotech",
     tag:"Wordpress | Custom Developemnt | Support Works",
     url:"https://jmrinfotech.com/",
   },
   {
     id: 12,
-    name: "JMR Sporting",
+    name: "Kraken Sports",
     tag:"Wordpress | Woo Commerce",
     url:"https://krakensports.ca/",
   },

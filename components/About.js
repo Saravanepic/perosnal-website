@@ -83,9 +83,7 @@ const About = ({
               <div>
                 <h3>3+ custom stack projects</h3>
               </div>
-              <div>
-                <img src="img/about/star.png" alt={1} />
-              </div>
+              
             </div>
           </Marquee>
         </div>
