@@ -3,6 +3,46 @@ import { sliderProps } from "@/utility/sliderProps";
 import { Component } from "react";
 import Slider from "react-slick";
 
+const testimonialData = [
+  {
+    id: 0,
+    name: "Anuja Nath",
+    role:"Founder, Brandmade Consult",
+    content:"Saravan is one of the best in his domain. You name it , Saravana will code it with precision and expertise. He not only built my dream website with the available and limited resources but also guided me through each and every step of the process. learned a lot from him and it was wonderful working with such an exceptionally brilliant professional. I highly recommend Saravana for any project – he's always a top choice!",
+  },
+  {
+    id: 1,
+    name: "Harsha Anil",
+    role:"Founder KARMIKH",
+    content:"Saravan is one of the best in his domain. You name it , Saravana will code it with precision and expertise. He not only built my dream website with the available and limited resources but also guided me through each and every step of the process. learned a lot from him and it was wonderful working with such an exceptionally brilliant professional. I highly recommend Saravana for any project – he's always a top choice!",
+  },
+  {
+    id: 2,
+    name: "Vishal Goswami",
+    role:"Founder at Friction Studio",
+    content:"He is a beast in coding. I am working with Saravana for the last couple of months and he is the best guy I have found in my development team. He is very instant in responding, doing the work on time, I think he never sleeps. I have already worked with Saravana on 15+ projects and we have to go a long way. He is very knowledgeable. He pays close attention to details. He is also very patient in client training and taking calls. Thanks a lot, Saravana.",
+  },
+  {
+    id: 3,
+    name: "Tim Huijsmans",
+    role:"President Faunawatch",
+    content:"A very skilled web developer. He volunteered to help us with several tasks on the website of our foundation, Faunawatch. He is quick and communicates well. It is very nice to work with him. I would definitely recommend him to others. ",
+  },
+  {
+    id: 4,
+    name: "NAINA SOLANKI",
+    role:"Founder, HFO",
+    content:"Working with Saravan has been an absolute pleasure. He’s not just a website developer; he’s a magician who turns your website dreams into reality. His speed and efficiency are incredible – he understands the importance of deadlines and never fails to deliver on time. Saravan’s coding expertise is top-notch, ensuring everything runs smoothly and looks fantastic.",
+  },
+  {
+    id: 5,
+    name: "Nemo",
+    role:"Founder, Yuyo Botanics",
+    content:"What sets Saravan apart is his professionalism combined with a great sense of humor. He makes the whole process enjoyable and stress-free. If you’re looking for someone who is fast, reliable, and genuinely great to work with, Saravan is your guy. Highly recommend!",
+  },
+  
+]
+
 export default class TestimonialSlider extends Component {
   constructor(props) {
     super(props);
@@ -63,102 +103,32 @@ export default class TestimonialSlider extends Component {
                 {...sliderProps.testimonial}
                 className=""
               >
-                <div>
-                  <div className="list_inner">
-                    <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
-                      <p>
-                      Saravan is one of the best in his domain. You name it , Saravana will code it with precision and expertise. He not only built my dream website with the available and limited resources but also guided me through each and every step of the process. learned a lot from him and it was wonderful working with such an exceptionally brilliant professional. I highly recommend Saravana for any project – he's always a top choice!
-                      </p>
-                    </div>
-                    <div className="info">
-                      <div className="image">
-                        <img src="img/testimonials/1.jpg" alt={1} />
+
+
+                {testimonialData.map((item) =>(
+                  <div key={item.id}>
+                    <div className="list_inner">
+                      <div className="details">
+                        <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                        <p>
+                        {item.content}
+                        </p>
                       </div>
-                      <div className="job">
-                        <h3>Harsha Anil</h3>
-                        <span>Founder KARMIKH</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="list_inner">
-                    <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
-                      <p>
-                      Saravan is my goto guy for all things website development. He has great coding experience. He will get things done with a quick turnaround. Very approachable and a pleasure to work with. Highly recommend his services for website development.
-                      </p>
-                    </div>
-                    <div className="info">
-                      <div className="image">
-                        <img src="img/testimonials/2.jpg" alt={2} />
-                      </div>
-                      <div className="job">
-                        <h3>Anuja Nath</h3>
-                        <span>Founder, Brandmade Consult</span>
+                      <div className="info">
+                        <div className="image">
+                          <img src="img/testimonials/1.jpg" alt={1} />
+                        </div>
+                        <div className="job">
+                          <h3>{item.name}</h3>
+                          <span>{item.role}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <div className="list_inner">
-                    <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
-                      <p>
-                      He is a beast in coding. I am working with Saravana for the last couple of months and he is the best guy I have found in my development team. He is very instant in responding, doing the work on time, I think he never sleeps. I have already worked with Saravana on 15+ projects and we have to go a long way. He is very knowledgeable. He pays close attention to details. He is also very patient in client training and taking calls. Thanks a lot, Saravana.
-                      </p>
-                    </div>
-                    <div className="info">
-                      <div className="image">
-                        <img src="img/testimonials/3.jpg" alt={3} />
-                      </div>
-                      <div className="job">
-                        <h3>Vishal Goswami</h3>
-                        <span>Founder at Friction Studio</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="list_inner">
-                    <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
-                      <p>
-                      A very skilled web developer. He volunteered to help us with several tasks on the website of our foundation, Faunawatch. He is quick and communicates well. It is very nice to work with him. I would definitely recommend him to others. 
-                      </p>
-                    </div>
-                    <div className="info">
-                      <div className="image">
-                        <img src="img/testimonials/2.jpg" alt={2} />
-                      </div>
-                      <div className="job">
-                        <h3>Tim Huijsmans</h3>
-                        <span>President Faunawatch</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="list_inner">
-                    <div className="details">
-                      <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
-                      <p>
-                      Working with Saravan has been an absolute pleasure. He’s not just a website developer; he’s a magician who turns your website dreams into reality. His speed and efficiency are incredible – he understands the importance of deadlines and never fails to deliver on time. Saravan’s coding expertise is top-notch, ensuring everything runs smoothly and looks fantastic.
-                      <br/>What sets Saravan apart is his professionalism combined with a great sense of humor. He makes the whole process enjoyable and stress-free. If you’re looking for someone who is fast, reliable, and genuinely great to work with, Saravan is your guy. Highly recommend!
-                      </p>
-                    </div>
-                    <div className="info">
-                      <div className="image">
-                        <img src="img/testimonials/2.jpg" alt={2} />
-                      </div>
-                      <div className="job">
-                        <h3>NAINA SOLANKI</h3>
-                        <span>Founder, HFO</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  )    
+                )}
+                
+                
               </Slider>
             </div>
           </div>
