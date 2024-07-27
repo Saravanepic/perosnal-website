@@ -145,6 +145,31 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
+                    <img src="img/portfolio/1.jpg" alt={5} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        Blum by Teyonah Paris
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://www.blumbyteyonah.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
                     <img src="img/portfolio/EG.png" alt={5} />
                   </div>
                   <div className="title_holder">
