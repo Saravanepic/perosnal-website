@@ -154,7 +154,7 @@ const shopifyprojectsData = [
   },
   {
     id: 26,
-    name: "TOH",
+    name: "Antennassnow",
     tag:"Shopify | Custom UI",
     url:"https://antennassnow.myshopify.com",
   },
