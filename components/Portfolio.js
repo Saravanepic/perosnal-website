@@ -3,6 +3,12 @@ import Marquee from "react-fast-marquee";
 
 const shopifyprojectsData = [
   {
+    id: 0,
+    name: "Taproots",
+    tag:"Shopify | Custom UI",
+    url:"https://taprootsva.com/",
+  },
+  {
     id: 1,
     name: "Atal The Label",
     tag:"Shopify | Theme Based",
@@ -164,11 +170,56 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://poplarforestnursery.myshopify.com/",
   },
-
-
-  
+  {
+    id: 28,
+    name: "HOMAG India",
+    tag:"Shopify",
+    url:"https://indiashop.homag.com/",
+  },
+  {
+    id: 29,
+    name: "JC Bags",
+    tag:"Shopify | Custom UI",
+    url:"https://jcbags.com/",
+  },
+  {
+    id: 29,
+    name: "Pure Spring Nutrition",
+    tag:"Shopify | Custom UI",
+    url:"https://purespringnutrition.com/",
+  },
+  {
+    id: 30,
+    name: "ENVSN Festival",
+    tag:"Shopify | Custom UI",
+    url:"http://localhost:3000/",
+  },
+  {
+    id: 31,
+    name: "River Tree Skylights",
+    tag:"Shopify | Custom UI",
+    url:"https://rivertreeskylights.com/",
+  },
+  {
+    id: 32,
+    name: "Seavoir",
+    tag:"Shopify | Custom UI",
+    url:"https://seavoir.com/",
+  },
+  {
+    id: 33,
+    name: "Alive & Well",
+    tag:"Shopify | Custom UI",
+    url:"https://aliveandwellaustin.shop/",
+  },
 ];
 const wordpressprojectsData = [
+  {
+    id: 0,
+    name: "MUTUALS",
+    tag:"Wordpress | Custom Ui | Builders",
+    url:"https://mutuals.co.in/",
+  },
   {
     id: 1,
     name: "315 Work Avenue",
@@ -252,6 +303,12 @@ const wordpressprojectsData = [
     name: "ZR-DKA",
     tag:"Wordpress | Support ",
     url:"https://zr-dka.com/",
+  },
+  {
+    id: 15,
+    name: "Asto Mumbai",
+    tag:"Wordpress | Support ",
+    url:"https://astomumbai.co.in/",
   },
 
 ]
@@ -340,6 +397,13 @@ const otherprojectsData = [
     tag:"Shopify | Support Works",
     url:"https://cynthiadesser.com/",
   },
+  {
+    id: 13,
+    name: "HAFSAAD",
+    tag:"Shopify | Support Works",
+    url:"https://hafsaad.com/",
+  },
+
 ]
 
 
@@ -389,20 +453,68 @@ const Portfolio = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in portfolio_custom">
             <ul>
-              <li>
+            <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/1.jpg" alt={1} />
+                    <img src="img/portfolio/taproots.png" alt={1} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <span className="tag">Shopify Website</span>
+                    <span className="tag">Shopify Website</span>
                       <h3>
-                          Alive & Well
+                          Taproots
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://aliveandwellaustin.shop/" target="_blank">
+                      <Link href="https://taprootsva.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/mutual.png" alt={2} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Wordpress Website</span>
+                      <h3>
+                        amutualspace
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://mutuals.co.in/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/ENVSN.png" alt={3} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          ENVSN
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://envsnfestival.com/">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -414,56 +526,7 @@ const Portfolio = ({ noTitle = false }) => {
                 </div>
               </li>
 
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/2.jpg" alt={2} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                        Seavoir
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="https://seavoir.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={2}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/3.jpg" alt={3} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                        River Tree Skylights
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="https://rivertreeskylights.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={2}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
+              
              
             </ul>
           </div>

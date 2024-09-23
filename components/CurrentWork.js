@@ -49,65 +49,17 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/taproots.png" alt={1} />
+                    <img src="img/portfolio/TWN.png" alt={1} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
                     <span className="tag">Shopify Website</span>
                       <h3>
-                          Taproots
+                          TWN
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/mutual.png" alt={2} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                    <span className="tag">Wordpress Website</span>
-                      <h3>
-                        amutualspace
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/ENVSN.png" alt={3} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                    <span className="tag">Shopify Website</span>
-                      <h3>
-                          ENVSN
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="">
+                      <Link href="https://twn-shop-store.myshopify.com/">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -142,30 +94,7 @@ const CurrentWork = ({ noTitle = false }) => {
                   </div>
                 </div>
               </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/1.jpg" alt={5} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                        Blum by Teyonah Paris
-                      </h3>
-                    </div>
-                    <div className="right">
-                    <Link href="https://www.blumbyteyonah.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
+             
 
               <li>
                 <div className="list_inner">

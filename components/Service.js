@@ -31,7 +31,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <h3 className="title"> Shopify Website Development</h3>
                         <Link
                           className="nicolas_sm_full_link"
-                          href="service_single"
+                          href=""
                         />
                         <img
                           className="interactive_image"
@@ -46,7 +46,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <h3 className="title">Wordpress Website Development</h3>
                         <Link
                           className="nicolas_sm_full_link"
-                          href="service_single"
+                          href=""
                         />
                         <img
                           className="interactive_image"
@@ -61,7 +61,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <h3 className="title">Website Development (via builders)</h3>
                         <Link
                           className="nicolas_sm_full_link"
-                          href="service_single"
+                          href=""
                         />
                         <img
                           className="interactive_image"
@@ -76,7 +76,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <h3 className="title">Front End (Design to HTML)</h3>
                         <Link
                           className="nicolas_sm_full_link"
-                          href="service_single"
+                          href=""
                         />
                         <img
                           className="interactive_image"
@@ -91,7 +91,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <h3 className="title">Custom App / JS Solutions</h3>
                         <Link
                           className="nicolas_sm_full_link"
-                          href="service_single"
+                          href=""
                         />
                         <img
                           className="interactive_image"
