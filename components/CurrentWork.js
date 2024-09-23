@@ -120,6 +120,56 @@ const CurrentWork = ({ noTitle = false }) => {
                   </div>
                 </div>
               </li>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/5.jpg" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        Ice Barrel
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://icebarrel.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/6.jpg" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Wordpress Website</span>
+                      <h3>
+                      Digital ConsultingHaus LLC
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://dimgrey-horse-249812.hostingersite.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
            
             </ul>
           </div>
