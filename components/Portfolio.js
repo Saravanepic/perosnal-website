@@ -218,6 +218,13 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://www.blumbyteyonah.com/",
   },
+  {
+    id: 35,
+    name: "Westernways",
+    tag:"Shopify | Custom UI",
+    url:"https://westernways.com/",
+  },
+
 ];
 const wordpressprojectsData = [
   {
