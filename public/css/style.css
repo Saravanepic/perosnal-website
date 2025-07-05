@@ -4180,6 +4180,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .nicolas_sm_process .list_inner{
+    padding: 45px 35px;
+  }
   .nicolas_sm_portfolio_slider img{
         aspect-ratio: 1.62 / 1;
   }
