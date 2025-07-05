@@ -15,10 +15,10 @@ const page = () => {
           <div className="page_title_in">
             <h3>
               <span className="stroke_text">Showcasing </span>
-              <span className="underline">My Work: </span>
+              <span className="underline">My Work: </span> <br/>
               <span className="stroke_text">A </span>
-              <span className="underline">Portfolio </span>
-              <span className="stroke_text">of</span>
+              <span className="underline">Portfolio</span> 
+              <span className="stroke_text">of </span>
               <span className="underline">Success</span>
             </h3>
           </div>

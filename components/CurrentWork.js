@@ -96,7 +96,59 @@ const CurrentWork = ({ noTitle = false }) => {
                   </div>
                 </div>
               </li>
-              
+
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/Granny.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                      Granny's Pickles
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://grannyspickles.myshopify.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/pupsentials.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                      Pupsentials
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://www.pupsentials.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
               <li>
                 <div className="list_inner">
                   <div className="image">

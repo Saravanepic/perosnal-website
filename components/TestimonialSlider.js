@@ -116,7 +116,7 @@ export default class TestimonialSlider extends Component {
                       </div>
                       <div className="info">
                         <div className="image">
-                          <img src="img/testimonials/1.jpg" alt={1} />
+                          <img src="img/testimonials/people.png" alt={1} />
                         </div>
                         <div className="job">
                           <h3>{item.name}</h3>

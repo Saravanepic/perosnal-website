@@ -210,11 +210,11 @@ const page = () => {
                   <p>pimCloud</p>
                 </div>
                 <div className="center">
-                  <p>Front End Developer</p>
+                  <p>Front End Developer - (Freelancer)</p>
                   <p className="fs-6">Helping in building a SASS product</p>
                 </div>
                 <div className="right">
-                  <span>2023 - Present</span>
+                  <span>2023 - 2024</span>
                 </div>
               </div>
               <div className="list_inner">

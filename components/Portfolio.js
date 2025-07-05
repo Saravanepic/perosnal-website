@@ -212,6 +212,12 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://aliveandwellaustin.shop/",
   },
+  {
+    id: 34,
+    name: "Blum by Teyonah",
+    tag:"Shopify | Custom UI",
+    url:"https://www.blumbyteyonah.com/",
+  },
 ];
 const wordpressprojectsData = [
   {
@@ -453,6 +459,54 @@ const Portfolio = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in portfolio_custom">
             <ul>
+                <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/ettetete.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          Ettetete
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://ettetete.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/mightylucky.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          Mighty Lucky
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://mighty-lucky.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>  
             <li>
                 <div className="list_inner">
                   <div className="image">
@@ -467,6 +521,30 @@ const Portfolio = ({ noTitle = false }) => {
                     </div>
                     <div className="right">
                       <Link href="https://taprootsva.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                 <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/ENVSN.png" alt={3} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          ENVSN
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://envsnfestival.com/">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -501,30 +579,7 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                 </div>
               </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/ENVSN.png" alt={3} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                    <span className="tag">Shopify Website</span>
-                      <h3>
-                          ENVSN
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="https://envsnfestival.com/">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
+           
 
               
              
