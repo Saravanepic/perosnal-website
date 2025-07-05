@@ -2388,6 +2388,7 @@ img {
   position: relative;
   cursor: pointer;
   padding: 18px 25px;
+  gap: 10px;
 }
 .nicolas_sm_question .accordion_header:hover .title h3 {
   color: #ffbd4a;
@@ -2438,7 +2439,7 @@ img {
   transform: rotate(180deg);
 }
 .nicolas_sm_portfolio_slider {
-  padding-bottom: 120px;
+  padding: 80px 0;
 }
 .nicolas_sm_portfolio_slider .slider_in {
   display: block;
@@ -3915,6 +3916,7 @@ img {
   }
   .nicolas_sm_hero .hero_text {
     flex-direction: column;
+    padding: 50px 0;
   }
   .nicolas_sm_hero .arrow {
     display: none;
@@ -3969,6 +3971,7 @@ img {
   }
   .nicolas_sm_hero .info_list img {
     margin-bottom: 20px;
+    display: none;
   }
   .nicolas_sm_main_title {
     flex-direction: column;
@@ -4177,8 +4180,30 @@ img {
 }
 
 @media (max-width: 768px) {
+  .nicolas_sm_portfolio_slider img{
+        aspect-ratio: 1.62 / 1;
+  }
+  .shopify_projects h2 {
+    font-size: 50px!important;
+}
+  .shopify_projects_wrapper li {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 70% 25%!important;  
+  }
+
+  .shopify_projects_wrapper li .project_type {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+  .nicolas_sm_hero{
+    margin-top: 40px;
+  }
   .nicolas_sm_page_title {
-    margin-top: 170px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+  .nicolas_sm_process{
+    padding: 0 0 100px 0;
   }
   .nicolas_sm_hero .info_list h3 {
     font-size: 21px;
@@ -4205,6 +4230,7 @@ img {
   }
   .nicolas_sm_interactive_list .title {
     font-size: 26px;
+    line-height: 140%;
   }
   .nicolas_sm_interactive_list .list_inner:before {
     bottom: 4px;
@@ -4219,7 +4245,15 @@ img {
     font-size: 130px;
   }
   .nicolas_sm_extra_title .projects {
-    margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 40px;
+  }
+  .nicolas_sm_pricing{
+    padding: 60px 0;
+  }
+  .nicolas_sm_testimonials .info{
+    border: none;
   }
   .nicolas_sm_portfolio .portfolio_in ul {
     margin-left: 0px;
@@ -4268,7 +4302,7 @@ img {
     padding-left: 0px;
   }
   .nicolas_sm_pricing .price {
-    font-size: 55px;
+    font-size: 45px;
   }
   .nicolas_sm_blog .left h3 {
     font-size: 25px;
@@ -4372,8 +4406,12 @@ img {
   .nicolas_sm_portfolio_slider .slider_in {
     padding: 0px 20px;
   }
+  .nicolas_sm_portfolio_slider .category span {
+    font-size: 12px;
+    font-weight: 700;
+  }
   .nicolas_sm_portfolio_slider .title h3 {
-    font-size: 20px;
+    font-size: 14px;
   }
   .nicolas_sm_portfolio_slider .details {
     border-image-outset: 20px;
