@@ -747,6 +747,9 @@ img {
   border-radius: 40px;
   overflow: hidden;
 }
+.nicolas_sm_hero .center span img{
+  filter: brightness(0.5) opacity(0.75);
+}
 .nicolas_sm_hero .hero_info_area .right {
   width: 31%;
   text-align: right;
