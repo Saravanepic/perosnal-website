@@ -25,6 +25,11 @@ export const metadata = {
     ],
     locale: "en_US",
     type: "website",
+     icons: {
+      icon: 'https://cdn.shopify.com/s/files/1/0580/4346/5911/files/Group_31.png?v=1751917652',
+      apple: 'https://cdn.shopify.com/s/files/1/0580/4346/5911/files/Group_31.png?v=1751917652',
+      shortcut: 'https://cdn.shopify.com/s/files/1/0580/4346/5911/files/Group_31.png?v=1751917652',
+    },
   },
 };
 

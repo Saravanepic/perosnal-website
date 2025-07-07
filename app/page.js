@@ -13,6 +13,8 @@ import NikolasLayout from "@/layouts/NikolasLayout";
 const page = () => {
   return (
     <NikolasLayout>
+      <link rel="icon" href="https://cdn.shopify.com/s/files/1/0580/4346/5911/files/Group_31.png?v=1751917652" type="image/svg+xml" />
+
       {/* Hero */}
       <Hero />
       {/* /Hero */}
