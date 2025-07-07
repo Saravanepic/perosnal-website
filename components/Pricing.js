@@ -149,7 +149,7 @@ const Pricing = () => {
                       <div className="info">
                         <h3 className="plan">Custom Development</h3>
                         <h3 className="price">
-                          $25 - $30<span>/ hour</span>
+                          $30 - $50<span>/ hour</span>
                         </h3>
                       </div>
                       <div className="features">
