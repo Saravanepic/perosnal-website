@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="center">
                   <span>
-                    <img src="img/hero/1.png" alt={1} />
+                    <img src="img/hero/Hero.png" alt={1} />
                   </span>
                 </div>
                 <div className="right">

@@ -18,7 +18,7 @@ const page = () => {
               <span className="underline">My Work: </span> <br/>
               <span className="stroke_text">A </span>
               <span className="underline">Portfolio</span> 
-              <span className="stroke_text">of </span>
+              <span className="stroke_text"> of </span>
               <span className="underline">Success</span>
             </h3>
           </div>

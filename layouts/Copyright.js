@@ -11,11 +11,9 @@ const Copyright = () => {
                   {new Date().getFullYear()} - All Rights Reserved Saravan
                 </p>
               </div>
-              {/* <div className="right">
-                <a href="#">Terms &amp; Condition </a>
-                <span>/ </span>
-                <a href="#">Privacy Policy</a>
-              </div> */}
+              <div className="right">
+                 <img src="img/logo/saravan_logo.png" alt={2} className="img-fluid"/>
+              </div>
             </div>
             <div className="nicolas_sm_totop">
               <img className="sm_svg" src="img/svg/down_arrow.svg" alt={1} />

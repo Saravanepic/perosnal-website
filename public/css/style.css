@@ -729,6 +729,7 @@ img {
 }
 .nicolas_sm_hero .info_list img {
   margin-bottom: 30px;
+  display: none;
 }
 .nicolas_sm_hero .info_list h3 {
   font-size: 26px;
@@ -3743,6 +3744,9 @@ img {
   font-weight: 800;
   text-indent: 30px;
 }
+.copyright_in img {
+    max-width: 200px;
+}
 
 /*---------------------------------------------------*/
 /*	14) NICOLAS RESPONSIVE
@@ -4052,6 +4056,7 @@ img {
     flex-direction: column;
     justify-content: center;
     padding-top: 77px;
+    gap: 20px;
   }
   .nicolas_sm_totop {
     transform: translateY(0) translateX(-50%);

@@ -8,7 +8,7 @@ const testimonialData = [
     id: 0,
     name: "Anuja Nath",
     role:"Founder, Brandmade Consult",
-    content:"Saravan is one of the best in his domain. You name it , Saravana will code it with precision and expertise. He not only built my dream website with the available and limited resources but also guided me through each and every step of the process. learned a lot from him and it was wonderful working with such an exceptionally brilliant professional. I highly recommend Saravana for any project – he's always a top choice!",
+    content:"Saravana is my goto guy for all things website development. He has great coding experience. He will get things done with a quick turnaround. Very approachable and a pleasure to work with. Highly recommend his services for website development.",
   },
   {
     id: 1,
