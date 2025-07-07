@@ -202,7 +202,7 @@ const page = () => {
                   <p>Freelance Shopify Developer</p>
                 </div>
                 <div className="right">
-                  <span>2024 - Present</span>
+                  <span>2024 - 2024</span>
                 </div>
               </div>
               <div className="list_inner">
