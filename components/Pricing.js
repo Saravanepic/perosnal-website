@@ -27,7 +27,7 @@ const Pricing = () => {
                       <div className="info">
                         <h3 className="plan">Shopify Website</h3>
                         <h3 className="price">
-                          $1000<span>/ website</span>
+                          <span>Starts @</span> $1000<span>/ website</span>
                         </h3>
                       </div>
                       <div className="features">
@@ -86,7 +86,7 @@ const Pricing = () => {
                       <div className="info">
                         <h3 className="plan">WordPress Website</h3>
                         <h3 className="price">
-                          $750<span>/ website</span>
+                          <span>Starts @</span> $750<span>/ website</span>
                         </h3>
                       </div>
                       <div className="features">
@@ -149,7 +149,7 @@ const Pricing = () => {
                       <div className="info">
                         <h3 className="plan">Custom Development</h3>
                         <h3 className="price">
-                          $30 - $50<span>/ hour</span>
+                          <span>Starts @</span> $30<span>/ hour</span>
                         </h3>
                       </div>
                       <div className="features">

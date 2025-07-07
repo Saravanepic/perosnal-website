@@ -13,9 +13,12 @@ const About = ({
               <span>{sectionTitle}</span>
             </div>
             <div className="center">
-              <p>
+              {/* <p>
                 I’m a bay-area born developer
                 based in Bangalore. I’m currently working as a Freelance Web Developer with agencies and companie's, creating connected brands, product commerce, and engaging web experiences.
+              </p> */}
+              <p>
+                Bay Area roots, Bangalore hustle. I help agencies and brands build fast, engaging web experiences—from e-commerce to interactive platforms—through clean code and creative problem-solving.
               </p>
             </div>
             <div className="right">

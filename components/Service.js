@@ -13,8 +13,11 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                 </span>
               </div>
               <div className="center">
-                <p>
+                {/* <p>
                 Building Loyal Audiences through User-Centric Design and Uncompromising Excellence
+                </p> */}
+                <p>
+                  Crafting Digital Experiences That Build Loyal Audiences—Where User-Centric Design Meets Uncompromising Performance.
                 </p>
               </div>
               <div className="right">

@@ -5,10 +5,11 @@ const Hero = () => {
         <div className="container">
           <div className="hero_text">
             <div className="left">
-              <h3 className="stroke_text">Hello world! I'm</h3>
+              <h3 className="stroke_text">Hey stranger! 👋</h3>
               <h1>
                 <span className="inline_text">
-                  Saravan Krishna
+                  {/* Saravan Krishna */}
+                  I'm Saravan
                   <span className="arrow">
                     <div className="wings">
                       <div className="wing">
@@ -48,7 +49,9 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>About me</h3>
                     <p>
-                      Hello, my name’s <b>Saravan</b>, I'm a versatile <b>Dynamic and Creative Freelance web developer</b> with expertise in front-end development and a broad experience across various platforms.
+                      {/* Hello, my name’s <b>Saravan</b>,  */}
+                      I'm a versatile <b>Dynamic and Creative Freelance web developer</b> blending clean code with creative solutions.
+                       I love bridging gaps between design and functionality. Let’s build something fluid, scalable, and user-obsessed.
                     </p>
                   </div>
                   <div className="info_list">
