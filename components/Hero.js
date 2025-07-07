@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="hero_text">
             <div className="left">
               <h3 className="stroke_text">Hello world! I'm</h3>
-              <h3>
+              <h1>
                 <span className="inline_text">
                   Saravan Krishna
                   <span className="arrow">
@@ -20,7 +20,7 @@ const Hero = () => {
                     </div>
                   </span>
                 </span>
-              </h3>
+              </h1>
             </div>
             <div className="right">
               <h3>
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="center">
                   <span>
-                    <img src="img/hero/Hero.png" alt={1} />
+                    <img src="img/hero/Hero.png" alt="Saravan Pic" loading="lazy"/>
                   </span>
                 </div>
                 <div className="right">

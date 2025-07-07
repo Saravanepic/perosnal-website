@@ -599,7 +599,8 @@ img {
   right: 0;
   top: -24px;
 }
-.nicolas_sm_hero .hero_text .left h3 {
+.nicolas_sm_hero .hero_text .left h3,
+.nicolas_sm_hero .hero_text .left h1 {
   font-family: "Bebas Neue";
   font-size: 120px;
   font-weight: 500;
@@ -3769,7 +3770,8 @@ img {
   .nicolas_sm_header li {
     margin-right: 35px;
   }
-  .nicolas_sm_hero .hero_text .left h3 {
+  .nicolas_sm_hero .hero_text .left h3,
+.nicolas_sm_hero .hero_text .left h1 {
     font-size: 70px;
   }
   .nicolas_sm_hero .hero_text .right h3 {
@@ -3935,7 +3937,8 @@ img {
     width: 100%;
     margin-top: 30px;
   }
-  .nicolas_sm_hero .hero_text .left h3 {
+  .nicolas_sm_hero .hero_text .left h3,
+.nicolas_sm_hero .hero_text .left h1 {
     font-size: 45px;
   }
   .nicolas_sm_hero .hero_text .right h3 {
