@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Saravan - Freelancer",
     images: [
       {
-        url: "https://cdn.shopify.com/s/files/1/0580/4346/5911/files/OG.png?v=1751916822",
+        url: "https://cdn.shopify.com/s/files/1/0580/4346/5911/files/OG_New.png?v=1751919368",
         width: 1200,
         height: 630,
         alt: "Saravan - Freelancer",
