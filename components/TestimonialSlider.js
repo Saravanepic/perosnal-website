@@ -36,10 +36,17 @@ const testimonialData = [
   },
   {
     id: 5,
+    name: "Pranjal Doorwar",
+    role:"Founder, Flowdojo",
+    content:"He is fast, reliable, and proficient in coding, We worked with him on custom Shopify projects, Shopify themes, and even WordPress tasks, International Stores, and every time he has delivered on time. Saravana is our go-to guy for anything Shopify. If you are looking for one of the best Shopify devs who is reliable, He is your guy!",
+  },
+  {
+    id: 6,
     name: "Nemo",
     role:"Founder, Yuyo Botanics",
     content:"What sets Saravan apart is his professionalism combined with a great sense of humor. He makes the whole process enjoyable and stress-free. If you’re looking for someone who is fast, reliable, and genuinely great to work with, Saravan is your guy. Highly recommend!",
   },
+  
   
 ]
 

@@ -78,7 +78,7 @@ const About = ({
                 <img src="img/about/star.png" alt={1} />
               </div>
               <div>
-                <h3>50+ Ecommerce sites delivered</h3>
+                <h3>100+ Ecommerce sites delivered</h3>
               </div>
               <div>
                 <img src="img/about/star.png" alt={1} />
