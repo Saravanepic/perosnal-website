@@ -4694,3 +4694,18 @@ img {
 .shopify_projects_wrapper li .project_link a:hover svg {
   color: black;
 }
+
+
+@media all and (min-width:1200px){
+  .nicolas_sm_header .logo img{
+    max-width: 300px;
+    max-height: 60px;
+  }
+  .nicolas_sm_header .button{
+    min-width: 300px;
+    text-align: right;
+  }
+  .nicolas_sm_header li{
+    margin-right: 55px;
+  }
+}
