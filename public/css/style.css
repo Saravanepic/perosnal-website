@@ -294,6 +294,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 5;
+  cursor: default;
 }
 .stroke_text {
   color: transparent;
@@ -756,6 +757,10 @@ img {
 }
 .nicolas_sm_hero .center span img{
   filter: brightness(0.5) opacity(0.75);
+  transition: 0.5s ease;
+}
+.nicolas_sm_hero .center span img:hover {
+  filter: brightness(1) opacity(0.75);
 }
 .nicolas_sm_hero .hero_info_area .right {
   width: 31%;
@@ -2971,6 +2976,14 @@ img {
 .nicolas_sm_blog_details .page_title_in {
   text-align: center;
 }
+.page_title_in{
+  position: relative;
+}
+.page_title_in svg{
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+}
 .nicolas_sm_blog_details .page_title_in > span {
   display: inline-block;
   width: 130px;
@@ -4197,6 +4210,11 @@ img {
 }
 
 @media (max-width: 768px) {
+  .page_title_in svg {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
   .nicolas_sm_process .list_inner{
     padding: 45px 35px;
   }
@@ -4289,12 +4307,12 @@ img {
   .nicolas_sm_portfolio .left h3 a {
     font-size: 25px;
   }
-  .nicolas_sm_portfolio .title_holder .right {
+  /* .nicolas_sm_portfolio .title_holder .right {
     display: none;
-  }
+  } */
   .nicolas_sm_portfolio .title_holder {
-    flex-direction: column;
-    align-items: baseline;
+    flex-direction: row;
+    align-items: flex-end;
   }
   .nicolas_sm_portfolio .left a,
   .nicolas_sm_portfolio .left .tag {
@@ -4322,7 +4340,7 @@ img {
     padding-left: 0px;
   }
   .nicolas_sm_pricing .price {
-    font-size: 45px;
+    font-size: 35px;
   }
   .nicolas_sm_blog .left h3 {
     font-size: 25px;

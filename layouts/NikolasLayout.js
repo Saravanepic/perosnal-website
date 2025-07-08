@@ -13,7 +13,7 @@ const NikolasLayout = ({ children, noFooter, onepage }) => {
     nicolasUtility.dataImage();
     nicolasUtility.imgToSVG();
     nicolasUtility.customCursor();
-    nicolasUtility.interactiveImage();
+    // nicolasUtility.interactiveImage();
   }, []);
   return (
     <Fragment>

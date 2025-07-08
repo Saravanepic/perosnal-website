@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="container">
           <div className="hero_text">
             <div className="left">
-              <h3 className="stroke_text">Hey stranger! 👋</h3>
+              <h3 className="stroke_text">Hi there! 👋</h3>
               <h1>
                 <span className="inline_text">
                   {/* Saravan Krishna */}
@@ -74,7 +74,7 @@ const Hero = () => {
                     <h3>Contact me</h3>
                     <p>
                       Email <a href="mailto:saravan1996.krishna@gmail.com">saravan1996.krishna@gmail.com</a>
-                      <br /><br /><br />
+                      <br /><br />
                       Phone Number<br/> <a href="tel:+919494962048">9494962048</a>
                     </p>
                   </div>

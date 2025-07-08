@@ -33,20 +33,20 @@ const About = ({
               <ul>
                 <li>
                   <div className="list_inner">
-                    <span>Born in</span>
-                    <h3>Vizag, India</h3>
+                    <span>Location</span>
+                    <h3>Based in Bangalore | From Vizag</h3>
                   </div>
                 </li>
                 <li>
                   <div className="list_inner">
                     <span>Experience</span>
-                    <h3>5.5 years experience</h3>
+                    <h3>6.5 years experience</h3>
                   </div>
                 </li>
                 <li>
                   <div className="list_inner">
-                    <span>Date of birth</span>
-                    <h3>25 March, 1997</h3>
+                    <span>Tech Journey</span>
+                    <h3>Coding Since 2017  </h3>
                   </div>
                 </li>
                 <li>

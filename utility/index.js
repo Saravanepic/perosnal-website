@@ -147,63 +147,63 @@ export const nicolasUtility = {
       }
     }
   },
-  interactiveImage() {
-    if (document.querySelectorAll(".nicolas_sm_interactive_list").length) {
-      var wrapper = document.querySelector(".nicolas_sm_interactive_list");
-      var wrapperOffsetRight = wrapper.getBoundingClientRect().left;
-      var inner = wrapper.querySelector(".interactive_list_inner");
-      var box = document.querySelector(".movingbox");
-      var list = wrapper.querySelectorAll("li");
+  // interactiveImage() {
+  //   if (document.querySelectorAll(".nicolas_sm_interactive_list").length) {
+  //     var wrapper = document.querySelector(".nicolas_sm_interactive_list");
+  //     var wrapperOffsetRight = wrapper.getBoundingClientRect().left;
+  //     var inner = wrapper.querySelector(".interactive_list_inner");
+  //     var box = document.querySelector(".movingbox");
+  //     var list = wrapper.querySelectorAll("li");
 
-      box.style.right = wrapperOffsetRight + "px";
+  //     box.style.right = wrapperOffsetRight + "px";
 
-      list.forEach(function (listItem) {
-        listItem.addEventListener("mouseenter", function () {
-          var element = this;
-          var image = element
-            .querySelector(".interactive_image")
-            .getAttribute("src");
-          box.style.backgroundImage = "url(" + image + ")";
-        });
-      });
+  //     list.forEach(function (listItem) {
+  //       listItem.addEventListener("mouseenter", function () {
+  //         var element = this;
+  //         var image = element
+  //           .querySelector(".interactive_image")
+  //           .getAttribute("src");
+  //         box.style.backgroundImage = "url(" + image + ")";
+  //       });
+  //     });
 
-      inner.addEventListener("mouseenter", function () {
-        this.classList.add("active");
-      });
+  //     inner.addEventListener("mouseenter", function () {
+  //       this.classList.add("active");
+  //     });
 
-      inner.addEventListener("mouseleave", function () {
-        this.classList.remove("active");
-      });
+  //     inner.addEventListener("mouseleave", function () {
+  //       this.classList.remove("active");
+  //     });
 
-      document.onmousemove = function (event) {
-        var cursor_y = event.clientY;
-        box.style.top = cursor_y + "px";
-      };
-    }
-  },
-  activeMenuBySection() {
-    window.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll(".nicolas_sm_section");
-      const navLi = document.querySelectorAll(".anchor_nav li");
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          current = section.getAttribute("id");
-        }
-      });
+  //     document.onmousemove = function (event) {
+  //       var cursor_y = event.clientY;
+  //       box.style.top = cursor_y + "px";
+  //     };
+  //   }
+  // },
+  // activeMenuBySection() {
+  //   window.addEventListener("scroll", () => {
+  //     const sections = document.querySelectorAll(".nicolas_sm_section");
+  //     const navLi = document.querySelectorAll(".anchor_nav li");
+  //     let current = "";
+  //     sections.forEach((section) => {
+  //       const sectionTop = section.offsetTop;
+  //       const sectionHeight = section.clientHeight;
+  //       if (pageYOffset >= sectionTop - sectionHeight / 3) {
+  //         current = section.getAttribute("id");
+  //       }
+  //     });
 
-      navLi.forEach((li) => {
-        if (current !== null) {
-          li.classList.remove("current");
-        }
-        if (
-          li.getElementsByTagName("a")[0].getAttribute("href") == `#${current}`
-        ) {
-          li.classList.add("current");
-        }
-      });
-    });
-  },
+  //     navLi.forEach((li) => {
+  //       if (current !== null) {
+  //         li.classList.remove("current");
+  //       }
+  //       if (
+  //         li.getElementsByTagName("a")[0].getAttribute("href") == `#${current}`
+  //       ) {
+  //         li.classList.add("current");
+  //       }
+  //     });
+  //   });
+  // },
 };
