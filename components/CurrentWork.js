@@ -75,32 +75,6 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Timba.png" alt={4} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                      Timba
-                      </h3>
-                    </div>
-                    <div className="right">
-                    <Link href="https://bytimba.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-
-              <li>
-                <div className="list_inner">
-                  <div className="image">
                     <img src="img/portfolio/Granny.png" alt={4} />
                   </div>
                   <div className="title_holder">
@@ -133,7 +107,7 @@ const CurrentWork = ({ noTitle = false }) => {
                     <div className="left">
                       <span className="tag">Shopify Website</span>
                       <h3>
-                      Pupsentials
+                      Pupsentials - WIP 
                       </h3>
                     </div>
                     <div className="right">
@@ -190,6 +164,31 @@ const CurrentWork = ({ noTitle = false }) => {
                     </div>
                     <div className="right">
                     <Link href="https://entergallery.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+               <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/Timba.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                      Timba
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://bytimba.com/" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"

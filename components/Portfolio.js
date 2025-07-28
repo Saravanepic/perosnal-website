@@ -224,6 +224,13 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://westernways.com/",
   },
+  {
+    id: 36,
+    name: "Nostrum Fashion",
+    tag:"Shopify | Custom UI",
+    url:"https://www.nostrumfashion.com/",
+  },
+
 
 ];
 const wordpressprojectsData = [
