@@ -230,6 +230,13 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://www.nostrumfashion.com/",
   },
+  {
+    id: 37,
+    name: "Blues Coffee & Teaco",
+    tag:"Shopify | Custom UI",
+    url:"https://www.bluescoffeeandteaco.com/",
+  },
+  
 
 
 ];
@@ -572,6 +579,54 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
+                    <img src="img/portfolio/TWN.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          TWN
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://twn-shop-store.myshopify.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/EG.png" alt={5} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                          Enter Gallery
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://entergallery.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              {/* <li>
+                <div className="list_inner">
+                  <div className="image">
                     <img src="img/portfolio/mutual.png" alt={2} />
                   </div>
                   <div className="title_holder">
@@ -592,7 +647,7 @@ const Portfolio = ({ noTitle = false }) => {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
            
 
               

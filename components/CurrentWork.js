@@ -46,8 +46,33 @@ const CurrentWork = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in">
             <ul>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/8.jpg" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        NLT - WIP
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
               
-               <li>
+              <li>
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/portfolio/IB.png" alt={4} />
@@ -107,7 +132,7 @@ const CurrentWork = ({ noTitle = false }) => {
                     <div className="left">
                       <span className="tag">Shopify Website</span>
                       <h3>
-                      Pupsentials - WIP 
+                      Pupsentials 
                       </h3>
                     </div>
                     <div className="right">
@@ -123,58 +148,8 @@ const CurrentWork = ({ noTitle = false }) => {
                 </div>
               </li>
 
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/TWN.png" alt={1} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                    <span className="tag">Shopify Website</span>
-                      <h3>
-                          TWN
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="https://twn-shop-store.myshopify.com/">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
               
-             
-
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/EG.png" alt={5} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                          Enter Gallery
-                      </h3>
-                    </div>
-                    <div className="right">
-                    <Link href="https://entergallery.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
+            
                <li>
                 <div className="list_inner">
                   <div className="image">
@@ -189,6 +164,31 @@ const CurrentWork = ({ noTitle = false }) => {
                     </div>
                     <div className="right">
                     <Link href="https://bytimba.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/5.jpg" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">SASS App</span>
+                      <h3>
+                        Custom Job Portal
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"

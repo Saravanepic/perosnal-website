@@ -54,6 +54,24 @@ const page = () => {
                   />
                 </div>
               </SwiperSlide>
+               <SwiperSlide className="swiper-slide">
+                <div className="list_inner">
+                <img src="img/portfolio/blues.png" alt={1} />
+                  {/* <img src="img/slider/1.jpg" alt={1} /> */}
+                  <div className="details">
+                    <div className="category">
+                      <span>Blues Coffee & Teaco</span>
+                    </div>
+                    <div className="title">
+                      <h3>Shopify Development and Support</h3>
+                    </div>
+                  </div>
+                  <Link
+                    className="nicolas_sm_full_link"
+                    href=""
+                  />
+                </div>
+              </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
                   <img src="img/portfolio/TWN.png" alt={2} />
