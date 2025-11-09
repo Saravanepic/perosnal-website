@@ -56,6 +56,16 @@ const Footer = () => {
                         />
                       </a>
                     </li>
+                    <li>
+                      <a href="https://calendly.com/saravan1996-krishna/15min" target="_blank">
+                        <span>Book a Slot</span>
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </a>
+                    </li>
                     {/* <li>
                       <a href="#">
                         <span>Behance</span>

@@ -1153,7 +1153,7 @@ img {
   background-color: #292a2a;
 }
 .nicolas_sm_portfolio .image {
-  border-radius: 40px;
+  border-radius: 30px;
   margin-bottom: 33px;
   overflow: hidden;
   position: relative;
@@ -1161,7 +1161,7 @@ img {
 .nicolas_sm_portfolio .image img {
   width: 100%;
   aspect-ratio: 5 / 3;
-  border-radius: 40px;
+  border-radius: 30px;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1674,6 +1674,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap:30px;
 }
 .nicolas_sm_footer .social_button li {
   width: 20%;
@@ -4351,6 +4352,7 @@ img {
   }
   .nicolas_sm_footer .social_button li {
     padding-left: 20px;
+    width: 40%;
   }
   .nicolas_sm_footer .footer_in .title h3 {
     font-size: 25px;

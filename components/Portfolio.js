@@ -236,6 +236,12 @@ const shopifyprojectsData = [
     tag:"Shopify | Custom UI",
     url:"https://www.bluescoffeeandteaco.com/",
   },
+  {
+    id: 38,
+    name: "Kosha",
+    tag:"Shopify | New Changes and Support",
+    url:"http://kosha.co/",
+  },
   
 
 
@@ -336,6 +342,12 @@ const wordpressprojectsData = [
     name: "Asto Mumbai",
     tag:"Wordpress | Support ",
     url:"https://astomumbai.co.in/",
+  },
+  {
+    id: 16,
+    name: "Blackbelt Realestate",
+    tag:"Wordpress | Portfolio Website",
+    url:"https://blackbelt-realestate.com/",
   },
 
 ]
@@ -480,7 +492,31 @@ const Portfolio = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in portfolio_custom">
             <ul>
-                <li>
+               <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/ojjsea.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          Ojjsea
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://ojjsea.myshopify.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/portfolio/ettetete.png" alt={1} />

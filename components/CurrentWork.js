@@ -50,7 +50,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/8.jpg" alt={4} />
+                    <img src="img/portfolio/nlt.png" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -61,6 +61,31 @@ const CurrentWork = ({ noTitle = false }) => {
                     </div>
                     <div className="right">
                     <Link href="" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+               <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/ojjsea.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        Ojjsea - WIP
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://ojjsea.myshopify.com/" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
