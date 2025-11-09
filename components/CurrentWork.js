@@ -50,7 +50,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/nlt.png" alt={4} />
+                    <img src="img/portfolio/NLT.png" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
