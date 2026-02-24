@@ -266,7 +266,29 @@ const page = () => {
         </div>
       </div>
       {/* /Experience */}
-      
+    
+
+      {/* Collaboration/Partnership */}
+      <div className="nicolas_sm_collaboration">
+        <div className="container">
+          <div className="nicolas_sm_main_title">
+            <div className="left">
+              <span>// Let's Build Together</span>
+            </div>
+            <div className="center">
+              <p>
+                I'm always open to collaboration and partnership opportunities. 
+                Whether you're looking to build a website, create a digital product, 
+                or explore joint ventures, let's connect and create something amazing together.
+              </p>
+            </div>
+            <div className="right">
+              <Link href="https://wa.me/9494962048?text=Hello,%20I%20am%20reaching%20out%20for%20some%20collobaration%20work%20to%20be%20done">(( Get in Touch ))</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* /Collaboration/Partnership */}
         
       {/* About_testimonials */}
       <TestimonialSlider sectionNumber="" />
@@ -274,6 +296,8 @@ const page = () => {
        {/* About_partners */}
       {/* <Partners sectionNumber="" /> */}
       {/* About_partners */}
+
+      
     </NikolasLayout>
   );
 };

@@ -4696,6 +4696,13 @@ img {
 .shopify_projects_wrapper li .project_link a:hover svg {
   color: black;
 }
+.nicolas_sm_collaboration{
+  padding: 100px 0 0;
+}
+.nicolas_sm_collaboration .nicolas_sm_main_title{
+  margin: 0;
+  padding: 100px 0 0;
+}
 
 
 @media all and (min-width:1200px){
