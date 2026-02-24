@@ -354,90 +354,96 @@ const wordpressprojectsData = [
 const otherprojectsData = [
   {
     id: 0,
+    name: "Bath Story",
+    tag:"Shopify | Support Works",
+    url:"https://bathstory.in/",
+  },
+  {
+    id: 1,
     name: "Travel Earth",
     tag:"FIGMA Design | Development Mentorship",
     url:"https://travel.earth/",
   },
   {
-    id: 0,
+    id: 2,
     name: "Beyond Food Bars",
     tag:"Dukaan | Support",
     url:"https://beyondfoodbars.com/",
   },
   {
-    id: 1,
+    id: 3,
     name: "Ranadey",
     tag:"Angular | Collobaration",
     url:"https://ranadey.com/",
   },
   {
-    id: 2,
+    id: 4,
     name: "Upstreet",
     tag:"HTML",
     url:"https://upstreet.in/",
   },
   {
-    id: 3,
+    id: 5,
     name: "GS Canna",
     tag:"HTML",
     url:"https://gscanna.com/",
   },
   {
-    id: 4,
+    id: 6,
     name: "EME",
     tag:"Shopify | Support Works",
     url:"https://espresso-experts.com/",
   },
   {
-    id: 5,
+    id: 7,
     name: "Hafsaad",
     tag:"Shopify | Support Works",
     url:"https://hafsaad.com/",
   },
   {
-    id: 6,
+    id: 8,
     name: "I Support LGBT",
     tag:"Shopify | Support Works",
     url:"https://isupportlgbt.org/",
   },
   {
-    id: 7,
+    id: 9,
     name: "Luminesy",
     tag:"Shopify | Support Works",
     url:"https://luminesy.com/",
   },
   {
-    id: 8,
+    id: 10,
     name: "Goldengate Beds",
     tag:"Shopify | Support Works",
     url:"https://goldengatebeds.com/",
   },
   {
-    id: 9,
+    id: 11,
     name: "Soulslings Singapore",
     tag:"Shopify | Support Works",
     url:"https://soulslingssg.com/",
   },
   {
-    id: 10,
+    id: 12,
     name: "Brasini Swimwear",
     tag:"Shopify | Support Works",
     url:"https://brasiniswimwear.com/",
   },
   {
-    id: 11,
+    id: 13,
     name: "Hype Flags",
     tag:"Shopify | Support Works",
     url:"https://hypeflags.com/",
   },
   {
-    id: 12,
+    id: 14,
     name: "Cynthia Desser",
     tag:"Shopify | Support Works",
     url:"https://cynthiadesser.com/",
   },
   {
-    id: 13,
+    id: 15,
     name: "HAFSAAD",
     tag:"Shopify | Support Works",
     url:"https://hafsaad.com/",
@@ -506,6 +512,30 @@ const Portfolio = ({ noTitle = false }) => {
                     </div>
                     <div className="right">
                       <Link href="https://ojjsea.myshopify.com/">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/wtn.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          WeartoNext
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://weartonext.in/">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"

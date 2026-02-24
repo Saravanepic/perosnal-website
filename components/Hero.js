@@ -75,7 +75,7 @@ const Hero = () => {
                     <p>
                       Email <a href="mailto:saravan1996.krishna@gmail.com">saravan1996.krishna@gmail.com</a>
                       <br /><br />
-                      Phone Number<br/> <a href="tel:+919494962048">9494962048</a>
+                      Phone Number<br/> <a href="https://wa.me/9494962048?text=Hello, I am reaching out for some work to be done" target="_blank">9494962048</a>
                     </p>
                   </div>
                   <div className="info_list">

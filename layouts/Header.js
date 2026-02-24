@@ -87,7 +87,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="button">
-              <Link href="tel:+919494962048">
+              <Link href="https://wa.me/9494962048?text=Hello, I am reaching out for some work to be done">
                 Let's talk <img src="img/header/arrow.png" alt="arrow" />
               </Link>
             </div>

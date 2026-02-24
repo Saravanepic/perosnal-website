@@ -56,11 +56,11 @@ const CurrentWork = ({ noTitle = false }) => {
                     <div className="left">
                       <span className="tag">Shopify Website</span>
                       <h3>
-                        NLT - WIP
+                        NLT
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="" target="_blank">
+                    <Link href="https://newlondontech.com/" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
