@@ -157,11 +157,15 @@ const jsonLd = {
         }
       ]
     },
-    {
+      {
       "@type": "Review",
       "itemReviewed": {
         "@type": "Service",
-        "name": "Freelance Web Development"
+        "@id": "https://saravan.dev/#service-webdev",
+        "name": "Freelance Web Development",
+        "provider": {
+          "@id": "https://saravan.dev/#person"
+        }
       },
       "author": {
         "@type": "Person",
@@ -171,14 +175,15 @@ const jsonLd = {
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 5,
-        "bestRating": 5
+        "bestRating": 5,
+        "worstRating": 4
       }
     },
     {
       "@type": "Review",
       "itemReviewed": {
         "@type": "Service",
-        "name": "Web Development"
+        "@id": "https://saravan.dev/#service-webdev"
       },
       "author": {
         "@type": "Person",
@@ -188,14 +193,15 @@ const jsonLd = {
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 5,
-        "bestRating": 5
+        "bestRating": 5,
+        "worstRating": 4
       }
     },
     {
       "@type": "Review",
       "itemReviewed": {
         "@type": "Service",
-        "name": "Web Development"
+        "@id": "https://saravan.dev/#service-webdev"
       },
       "author": {
         "@type": "Person",
@@ -205,7 +211,8 @@ const jsonLd = {
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 5,
-        "bestRating": 5
+        "bestRating": 5,
+        "worstRating": 4
       }
     }
   ]
