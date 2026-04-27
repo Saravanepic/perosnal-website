@@ -183,12 +183,34 @@ const page = () => {
                   <span>2022 - Present</span>
                 </div>
               </div>
+                <div className="list_inner">
+                <div className="left">
+                  <p>Carnera Technologies Inc.</p>
+                </div>
+                <div className="center">
+                  <p>Contract Shopify Developer</p>
+                </div>
+                <div className="right">
+                  <span>2026 - Present</span>
+                </div>
+              </div>
               <div className="list_inner">
                 <div className="left">
                   <p>Creative Labs</p>
                 </div>
                 <div className="center">
                   <p>Freelance Tech Lead</p>
+                </div>
+                <div className="right">
+                  <span>2024 - Present</span>
+                </div>
+              </div>
+                <div className="list_inner">
+                <div className="left">
+                  <p>Upwork</p>
+                </div>
+                <div className="center">
+                  <p>Freelance Developer</p>
                 </div>
                 <div className="right">
                   <span>2024 - Present</span>

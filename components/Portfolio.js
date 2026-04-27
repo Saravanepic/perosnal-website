@@ -498,6 +498,30 @@ const Portfolio = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in portfolio_custom">
             <ul>
+                 <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/insti.png" alt={1} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                    <span className="tag">Shopify Website</span>
+                      <h3>
+                          Shop Insti
+                      </h3>
+                    </div>
+                    <div className="right">
+                      <Link href="https://insti-shop.myshopify.com//">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li> 
                <li>
                 <div className="list_inner">
                   <div className="image">

@@ -66,6 +66,19 @@ const Footer = () => {
                         />
                       </a>
                     </li>
+
+                     <li>
+                      <a href="https://www.upwork.com/services/product/development-it-shopify-store-development-custom-themes-performance-optimisation-seo-2046994613342434029?ref=project_share" target="_blank">
+                        <span>Hire Me on Upwork</span>
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </a>
+                    </li>
+
+                    
                     {/* <li>
                       <a href="#">
                         <span>Behance</span>
