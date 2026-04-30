@@ -87,7 +87,7 @@ const jsonLd = {
         "@id": "https://saravan.dev/#person"
       },
       "datePublished": "2024-01-01",
-      "dateModified": "2025-03-05",
+      "dateModified": "2025-03-05T00:00:00+00:00",
       "inLanguage": "en",
       "isPartOf": {
         "@type": "WebSite",
