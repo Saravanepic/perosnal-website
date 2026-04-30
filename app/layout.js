@@ -157,61 +157,6 @@ const jsonLd = {
         }
       ]
     },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Person",
-        "@id": "https://saravan.dev/#person",
-        "name": "Saravan"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Harsha Anil"
-      },
-      "reviewBody": "Saravan is one of the best in his domain. You name it, Saravana will code it with precision and expertise. He not only built my dream website with the available and limited resources but also guided me through each and every step of the process. learned a lot from him and it was wonderful working with such an exceptionally brilliant professional. I highly recommend Saravana for any project – he's always a top choice!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5,
-        "bestRating": 5,
-        "worstRating": 4
-      }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Person",
-        "@id": "https://saravan.dev/#person"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Vishal Goswami"
-      },
-      "reviewBody": "He is a beast in coding. I am working with Saravana for the last couple of months and he is the best guy I have found in my development team. He is very instant in responding, doing the work on time, I think he never sleeps. I have already worked with Saravana on 15+ projects and we have to go a long way. He is very knowledgeable. He pays close attention to details. He is also very patient in client training and taking calls. Thanks a lot, Saravana.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5,
-        "bestRating": 5,
-        "worstRating": 4
-      }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Person",
-        "@id": "https://saravan.dev/#person"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Tim Huijsmans"
-      },
-      "reviewBody": "A very skilled web developer. He volunteered to help us with several tasks on the website of our foundation, Faunawatch. He is quick and communicates well. It is very nice to work with him. I would definitely recommend him to others.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5,
-        "bestRating": 5,
-        "worstRating": 4
-      }
-    }
   ]
 };
 
