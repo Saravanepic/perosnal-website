@@ -192,7 +192,7 @@ const shopifyprojectsData = [
     id: 30,
     name: "ENVSN Festival",
     tag:"Shopify | Custom UI",
-    url:"http://localhost:3000/",
+    url:"https://envsnfestival.com/",
   },
   {
     id: 31,

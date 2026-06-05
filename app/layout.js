@@ -1,5 +1,6 @@
 import Preloader from "@/layouts/Preloader";
 import ContactWidget from "@/components/ContactWidget";
+import BackToTop from "@/components/BackToTop";
 import "@css/plugins.css";
 import "@css/style.css";
 import "./globals.css";
@@ -261,6 +262,7 @@ export default function RootLayout({ children }) {
         <Preloader />
         {children}
         <ContactWidget />
+        <BackToTop />
         <Analytics />
         <SpeedInsights />
       </body>

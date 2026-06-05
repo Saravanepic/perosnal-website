@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import Faq from "@/components/Faq";
+import CopyEmail from "@/components/CopyEmail";
 import { Copyright2 } from "@/layouts/Copyright";
 import NikolasLayout from "@/layouts/NikolasLayout";
 const page = () => {
@@ -41,7 +42,7 @@ const page = () => {
                       <li>
                         <span>Stay up to date</span>
                         <a href="#">+91 9494962048</a>
-                        <a href="#">saravan1996.krishna@gmail.com</a>
+                        <CopyEmail />
                       </li>
                       <li>
                         <span>Address</span>

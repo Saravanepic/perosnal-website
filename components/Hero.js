@@ -1,3 +1,5 @@
+import CopyEmail from "@/components/CopyEmail";
+
 const Hero = () => {
   return (
     <div className="nicolas_sm_section" id="home">
@@ -73,7 +75,7 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>Contact me</h3>
                     <p>
-                      Email <a href="mailto:saravan1996.krishna@gmail.com">saravan1996.krishna@gmail.com</a>
+                      Email <CopyEmail />
                       <br /><br />
                       Phone Number<br/> <a href="https://wa.me/9494962048?text=Hello, I am reaching out for some work to be done" target="_blank">9494962048</a>
                     </p>
