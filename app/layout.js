@@ -84,12 +84,12 @@ const jsonLd = {
       "url": "https://saravan.dev",
       "name": "Saravan.dev — Freelance Shopify Developer & Web Developer",
       "description": "Portfolio and services of Saravan, a freelance Shopify developer and web developer based in Bangalore, India.",
-      "publisher": { "@id": "https://saravan.dev/#person" },
+      "publisher": { "@id": "https://saravan.dev" },
       "inLanguage": "en",
     },
     {
       "@type": "Person",
-      "@id": "https://saravan.dev/#person",
+      "@id": "https://saravan.dev/about",
       "name": "Saravan",
       "givenName": "Saravan",
       "familyName": "Krishna",
@@ -164,16 +164,16 @@ const jsonLd = {
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://saravan.dev/#profilepage",
+      "@id": "https://saravan.dev",
       "url": "https://saravan.dev",
       "name": "Saravan — Freelance Shopify Developer & Web Developer Portfolio",
       "description": "Portfolio of Saravan, a freelance Shopify developer and web developer based in Bangalore with 6+ years of experience delivering custom Shopify themes, e-commerce stores, and web applications for clients worldwide.",
-      "mainEntity": { "@id": "https://saravan.dev/#person" },
-      "about": { "@id": "https://saravan.dev/#person" },
+      "mainEntity": { "@id": "https://saravan.dev" },
+      "about": { "@id": "https://saravan.dev/about" },
       "datePublished": "2024-01-01",
       "dateModified": "2026-06-06T00:00:00+00:00",
       "inLanguage": "en",
-      "isPartOf": { "@id": "https://saravan.dev/#website" }
+      "isPartOf": { "@id": "https://saravan.dev" }
     },
     {
       "@type": "FAQPage",
