@@ -4718,3 +4718,7 @@ img {
     margin-right: 55px;
   }
 }
+
+.object-cover{
+  object-fit: cover;
+}

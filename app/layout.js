@@ -1,4 +1,5 @@
 import Preloader from "@/layouts/Preloader";
+import ContactWidget from "@/components/ContactWidget";
 import "@css/plugins.css";
 import "@css/style.css";
 import "./globals.css";
@@ -172,6 +173,7 @@ export default function RootLayout({ children }) {
       <body>
         <Preloader />
         {children}
+        <ContactWidget />
         <Analytics />
         <SpeedInsights />
       </body>

@@ -47,6 +47,82 @@ const CurrentWork = ({ noTitle = false }) => {
           <div className="portfolio_in">
             <ul>
 
+
+               <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/enough.png" alt={1} className="object-cover" />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        ENOUGH
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://weareenough.co/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/IB.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        Ice Barrel
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://icebarrel.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+                 <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/Timba.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                      Timba
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://bytimba.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
               <li>
                 <div className="list_inner">
                   <div className="image">
@@ -72,7 +148,9 @@ const CurrentWork = ({ noTitle = false }) => {
                 </div>
               </li>
 
-               <li>
+              
+
+               {/* <li>
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/portfolio/ojjsea.png" alt={4} />
@@ -95,32 +173,9 @@ const CurrentWork = ({ noTitle = false }) => {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
               
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/IB.png" alt={4} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">Shopify Website</span>
-                      <h3>
-                        Ice Barrel
-                      </h3>
-                    </div>
-                    <div className="right">
-                    <Link href="https://icebarrel.com/" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
+              
 
               <li>
                 <div className="list_inner">
@@ -173,33 +228,33 @@ const CurrentWork = ({ noTitle = false }) => {
                 </div>
               </li>
 
-              
-            
-               <li>
+
+              <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Timba.png" alt={4} />
+                    <img src="img/portfolio/cd.png" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <span className="tag">Shopify Website</span>
+                      <span className="tag">Shopify Website - WIP</span>
                       <h3>
-                      Timba
+                        Cosmos Diamonds
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://bytimba.com/" target="_blank">
+                    {/* <Link href="https://ojjsea.myshopify.com/" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
                           alt={1}
                         />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
               </li>
 
+            
               <li>
                 <div className="list_inner">
                   <div className="image">
