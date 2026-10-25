@@ -1,5 +1,6 @@
 import Preloader from "@/layouts/Preloader";
 import ContactWidget from "@/components/ContactWidget";
+import Dock from "@/components/Dock";
 import BackToTop from "@/components/BackToTop";
 import "@css/plugins.css";
 import "@css/style.css";
@@ -10,8 +11,11 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   metadataBase: new URL("https://saravan.dev"),
-  title: "Saravan — Shopify Expert & React Developer | Bangalore, India",
-  description: "Hire Saravan — a Shopify Expert and React/Next.js developer based in Bangalore, India with 6+ years of experience. Custom Shopify themes, CRO, Shopify apps, WordPress, and high-performance web development for agencies and businesses worldwide.",
+  title: {
+    default: "Saravan — Shopify Expert & React Developer | Bangalore, India",
+    template: "%s | Saravan",
+  },
+  description: "Hire Saravan — a Shopify Expert and React/Next.js developer based in Bangalore, India with 6+ years of experience. Custom Shopify themes, CRO, Shopify apps, WordPress and Next.js, as a white-label development partner for agencies and directly for brands worldwide.",
   keywords: [
     "shopify developer india",
     "shopify expert bangalore",
@@ -32,6 +36,9 @@ export const metadata = {
     "ecommerce developer india",
     "custom web development",
     "shopify plus developer",
+    "white label shopify developer",
+    "shopify developer for agencies",
+    "outsource shopify development india",
   ],
   alternates: {
     canonical: "https://saravan.dev",
@@ -85,12 +92,12 @@ const jsonLd = {
       "url": "https://saravan.dev",
       "name": "Saravan.dev — Freelance Shopify Developer & Web Developer",
       "description": "Portfolio and services of Saravan, a freelance Shopify developer and web developer based in Bangalore, India.",
-      "publisher": { "@id": "https://saravan.dev" },
+      "publisher": { "@id": "https://saravan.dev/#person" },
       "inLanguage": "en",
     },
     {
       "@type": "Person",
-      "@id": "https://saravan.dev/about",
+      "@id": "https://saravan.dev/#person",
       "name": "Saravan",
       "givenName": "Saravan",
       "familyName": "Krishna",
@@ -157,7 +164,7 @@ const jsonLd = {
           "name": "Hourly Rate",
           "currency": "USD",
           "duration": "PT1H",
-          "median": 30,
+          "median": 35,
           "percentile25": 25,
           "percentile75": 50
         }
@@ -165,20 +172,20 @@ const jsonLd = {
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://saravan.dev",
+      "@id": "https://saravan.dev/#profilepage",
       "url": "https://saravan.dev",
       "name": "Saravan — Freelance Shopify Developer & Web Developer Portfolio",
       "description": "Portfolio of Saravan, a freelance Shopify developer and web developer based in Bangalore with 6+ years of experience delivering custom Shopify themes, e-commerce stores, and web applications for clients worldwide.",
-      "mainEntity": { "@id": "https://saravan.dev" },
-      "about": { "@id": "https://saravan.dev/about" },
+      "mainEntity": { "@id": "https://saravan.dev/#person" },
+      "about": { "@id": "https://saravan.dev/#person" },
       "datePublished": "2024-01-01",
       "dateModified": "2026-06-06T00:00:00+00:00",
       "inLanguage": "en",
-      "isPartOf": { "@id": "https://saravan.dev" }
+      "isPartOf": { "@id": "https://saravan.dev/#website" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://saravan.dev/service",
+      "@id": "https://saravan.dev/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -209,7 +216,7 @@ const jsonLd = {
           "name": "How much does Saravan charge for Shopify development?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Saravan's Shopify development projects start at $1,250 USD for a full store build. Custom web development is available at $30/hour. Contact via WhatsApp or LinkedIn for a tailored quote."
+            "text": "Saravan's Shopify development projects start at $1,250 USD for a full store build. Custom web development is available at $35/hour. Contact via WhatsApp or LinkedIn for a tailored quote."
           }
         },
         {
@@ -253,6 +260,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -262,6 +275,7 @@ export default function RootLayout({ children }) {
         <Preloader />
         {children}
         <ContactWidget />
+        <Dock />
         <BackToTop />
         <Analytics />
         <SpeedInsights />

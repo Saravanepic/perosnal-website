@@ -24,7 +24,7 @@ const About = ({
             <div className="right">
               <div className="scroll anchor">
                 <a href={`#${nextSection}`} />
-                <img className="sm_svg" src="img/svg/down_arrow.svg" alt={2} />
+                <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
               </div>
             </div>
           </div>
@@ -63,25 +63,25 @@ const About = ({
           <Marquee className="marquee">
             <div className="wrap">
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.png" alt="" />
               </div>
               <div>
                 <h3>100+ success projects</h3>
               </div>
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.png" alt="" />
               </div>
               <div>
                 <h3>50+ happy clients</h3>
               </div>
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.png" alt="" />
               </div>
               <div>
                 <h3>100+ Ecommerce sites delivered</h3>
               </div>
               <div>
-                <img src="img/about/star.png" alt={1} />
+                <img src="img/about/star.png" alt="" />
               </div>
               <div>
                 <h3>3+ custom stack projects</h3>

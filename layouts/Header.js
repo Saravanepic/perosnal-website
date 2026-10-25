@@ -16,6 +16,7 @@ const Header = () => {
     { id: 2, title: "about", href: "about" },
     { id: 3, title: "service", href: "service" },
     { id: 4, title: "portfolio", href: "portfolio" },
+    { id: 6, title: "agencies", href: "/agencies" },
     // { id: 5, title: "blog", href: "blog" },
     // { id: 5, title: "contact", href: "contact" },
   ];
@@ -27,9 +28,9 @@ const Header = () => {
         <div className="mobile_menu_inner">
           <div className="mobile_in">
             <div className="logo">
-              <a href="#">
-                <img src="img/logo/MobileLogo.png" alt="" />
-              </a>
+              <Link href="/">
+                <img src="img/logo/MobileLogo.png" alt="Saravan logo" />
+              </Link>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
               <div className="hamburger hamburger--slider">
@@ -63,7 +64,7 @@ const Header = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/saravan_logo.png" alt={2} />
+                <img src="img/logo/saravan_logo.png" alt="Saravan logo" />
               </Link>
             </div>
             <div className="menu">
@@ -87,7 +88,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="button">
-              <Link href="https://wa.me/9494962048?text=Hello, I am reaching out for some work to be done">
+              <Link href="https://wa.me/919494962048?text=Hello, I am reaching out for some work to be done">
                 Let's talk <img src="img/header/arrow.png" alt="arrow" />
               </Link>
             </div>
@@ -125,9 +126,9 @@ export const OnePageHeader = () => {
         <div className="mobile_menu_inner">
           <div className="mobile_in">
             <div className="logo">
-              <a href="#">
-                <img src="img/logo/saravan_logo.png" alt="" />
-              </a>
+              <Link href="/">
+                <img src="img/logo/saravan_logo.png" alt="Saravan logo" />
+              </Link>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
               <div className="hamburger hamburger--slider">
@@ -161,7 +162,7 @@ export const OnePageHeader = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/saravan_logo.png" alt={2} />
+                <img src="img/logo/saravan_logo.png" alt="Saravan logo" />
               </Link>
             </div>
             <div className="menu">

@@ -3,6 +3,11 @@ import Faq from "@/components/Faq";
 import CopyEmail from "@/components/CopyEmail";
 import { Copyright2 } from "@/layouts/Copyright";
 import NikolasLayout from "@/layouts/NikolasLayout";
+export const metadata = {
+  title: "Contact",
+  alternates: { canonical: "/contact" },
+  robots: { index: false, follow: true },
+};
 const page = () => {
   return (
     <NikolasLayout noFooter>
@@ -29,7 +34,7 @@ const page = () => {
                     <img
                       className="sm_svg"
                       src="img/svg/down_arrow.svg"
-                      alt={1}
+                      alt=""
                     />
                   </a>
                 </div>
@@ -40,8 +45,8 @@ const page = () => {
                   <div className="contact">
                     <ul>
                       <li>
-                        <span>Stay up to date</span>
-                        <a href="#">+91 9494962048</a>
+                        <span>Get in touch</span>
+                        <a href="tel:+919494962048">+91 9494962048</a>
                         <CopyEmail />
                       </li>
                       <li>
@@ -56,7 +61,7 @@ const page = () => {
                         <a href="#">Instagram</a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/in/saravana-krishna-4a6851171/" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/saravana-krishna/" target="_blank">Linkedin</a>
                       </li>
                     </ul>
                   </div>

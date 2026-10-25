@@ -58,12 +58,12 @@ const faqData = [
   },
 ];
 
-const Faq = ({ limit = 10 }) => {
+const Faq = ({ limit = 10, data = faqData }) => {
   const [active, setActive] = useState(1);
   const onClick = (value) => setActive(active == value ? null : value);
   return (
     <div className="accordion_wrap ready">
-      {faqData.map(
+      {data.map(
         (item) =>
           item.id <= limit && (
             <div
@@ -81,7 +81,7 @@ const Faq = ({ limit = 10 }) => {
                   <img
                     className="sm_svg"
                     src="img/svg/down_arrow.svg"
-                    alt={1}
+                    alt=""
                   />
                 </div>
               </div>

@@ -60,7 +60,7 @@ export default function CopyEmail() {
           border-radius: 5px;
           color: rgba(255,255,255,0.45);
           cursor: pointer;
-          padding: 3px 5px;
+          padding: 7px 9px;
           transition: border-color 0.18s, color 0.18s, background 0.18s;
           vertical-align: middle;
           flex-shrink: 0;

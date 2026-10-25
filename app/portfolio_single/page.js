@@ -1,4 +1,9 @@
 import NikolasLayout from "@/layouts/NikolasLayout";
+export const metadata = {
+  title: "Project",
+  alternates: { canonical: "/portfolio_single" },
+  robots: { index: false, follow: true },
+};
 const page = () => {
   return (
     <NikolasLayout>
@@ -25,10 +30,10 @@ const page = () => {
                     <img
                       className="sm_svg"
                       src="img/svg/down_arrow.svg"
-                      alt={1}
+                      alt=""
                     />
                   </a>
-                  <img src="img/portfolio/8.jpg" alt={8} />
+                  <img src="img/portfolio/8.jpg" alt="" />
                 </div>
                 <div className="single_list">
                   <ul>
@@ -65,7 +70,7 @@ const page = () => {
                               <img
                                 className="sm_svg"
                                 src="img/svg/facebook.svg"
-                                alt={1}
+                                alt=""
                               />
                             </a>
                           </li>
@@ -74,7 +79,7 @@ const page = () => {
                               <img
                                 className="sm_svg"
                                 src="img/svg/twitter.svg"
-                                alt={2}
+                                alt=""
                               />
                             </a>
                           </li>
@@ -83,7 +88,7 @@ const page = () => {
                               <img
                                 className="sm_svg"
                                 src="img/svg/instagram.svg"
-                                alt={3}
+                                alt=""
                               />
                             </a>
                           </li>
@@ -92,7 +97,7 @@ const page = () => {
                               <img
                                 className="sm_svg"
                                 src="img/svg/linkedin.svg"
-                                alt={4}
+                                alt=""
                               />
                             </a>
                           </li>
@@ -182,17 +187,17 @@ const page = () => {
                   <ul>
                     <li>
                       <div className="list_inner">
-                        <img src="img/portfolio/9.jpg" alt={9} />
+                        <img src="img/portfolio/9.jpg" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/portfolio/10.jpg" alt={10} />
+                        <img src="img/portfolio/10.jpg" alt="" />
                       </div>
                     </li>
                     <li>
                       <div className="list_inner">
-                        <img src="img/portfolio/11.jpg" alt={11} />
+                        <img src="img/portfolio/11.jpg" alt="" />
                       </div>
                     </li>
                   </ul>
@@ -203,7 +208,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/arrow_left.svg"
-                        alt={1}
+                        alt=""
                       />{" "}
                       Previous
                     </a>
@@ -214,7 +219,7 @@ const page = () => {
                       <img
                         className="sm_svg"
                         src="img/svg/arrow_left.svg"
-                        alt={1}
+                        alt=""
                       />
                     </a>
                   </div>

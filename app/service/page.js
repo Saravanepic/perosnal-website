@@ -4,27 +4,32 @@ import TestimonialSlider from "@/components/TestimonialSlider";
 import WorkingProcess from "@/components/WorkingProcess";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import Faq from "@/components/Faq";
+export const metadata = {
+  title: "Shopify & Web Development Services for Agencies",
+  description:
+    "Custom Shopify theme development, Shopify CRO, Figma-to-Liquid builds, WordPress and React/Next.js development. Available as a white-label developer for agencies and as a direct partner for brands.",
+  alternates: { canonical: "/service" },
+};
 const page = () => {
   return (
     <NikolasLayout>
-      <link rel="icon" href="https://cdn.shopify.com/s/files/1/0580/4346/5911/files/Group_31.png?v=1751917652" type="image/svg+xml" />
       {" "}
       {/* Page_title */}
       <div className="nicolas_sm_page_title">
         <div className="container">
           <div className="page_title_in">
-            <h3>
+            <h1>
               <span className="underline">Specialized in</span>
               <span className="stroke_text"> website Development </span>and{" "}
               <span className="stroke_text">ecommerce </span>
-              <span className="underline">system's</span>
-            </h3>
+              <span className="underline">systems</span>
+            </h1>
           </div>
         </div>
       </div>
       {/* /Page_title */}
       {/* Service */}
-      <Service sectionNumber="" />
+      <Service sectionNumber="" servicePage />
       {/* /Service */}
       {/* Testimonials */}
       {/* <TestimonialSlider sectionNumber="" /> */}

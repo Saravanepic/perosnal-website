@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-const WA_NUMBER = "+919494962048";
+const WA_NUMBER = "919494962048";
 const WA_MSG = encodeURIComponent("Hi Saravan, I'd like to connect with you!");
 const LINKEDIN_URL = "https://www.linkedin.com/in/saravana-krishna/";
 

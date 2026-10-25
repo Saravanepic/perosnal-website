@@ -1,5 +1,10 @@
 import Faq from "@/components/Faq";
 import NikolasLayout from "@/layouts/NikolasLayout";
+export const metadata = {
+  title: "Service",
+  alternates: { canonical: "/service_single" },
+  robots: { index: false, follow: true },
+};
 const page = () => {
   return (
     <NikolasLayout>
@@ -25,10 +30,10 @@ const page = () => {
                   <img
                     className="sm_svg"
                     src="img/svg/down_arrow.svg"
-                    alt={1}
+                    alt=""
                   />
                 </a>
-                <img src="img/portfolio/7.jpg" alt={7} />
+                <img src="img/portfolio/7.jpg" alt="" />
               </div>
               <div className="text" id="text">
                 <p>
@@ -132,7 +137,7 @@ const page = () => {
                 </ul>
               </div>
               <div className="image">
-                <img src="img/portfolio/2.jpg" alt={2} />
+                <img src="img/portfolio/2.jpg" alt="" />
               </div>
               <div className="text">
                 <p>

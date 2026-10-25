@@ -7,16 +7,16 @@ const Copyright = () => {
             <div className="copyright_in">
               <div className="left">
                 <p>
-                  <img className="sm_svg" src="img/svg/copyright.svg" alt={1} />{" "}
+                  <img className="sm_svg" src="img/svg/copyright.svg" alt="" />{" "}
                   {new Date().getFullYear()} - All Rights Reserved Saravan
                 </p>
               </div>
               <div className="right">
-                 <img src="img/logo/saravan_logo.png" alt={2} className="img-fluid"/>
+                 <img src="img/logo/saravan_logo.png" alt="Saravan logo" className="img-fluid"/>
               </div>
             </div>
             <div className="nicolas_sm_totop">
-              <img className="sm_svg" src="img/svg/down_arrow.svg" alt={1} />
+              <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
               <a className="nicolas_sm_full_link" href="#" />
             </div>
           </div>
@@ -35,7 +35,7 @@ export const Copyright2 = () => {
           <div className="copyright_in">
             <div className="left">
               <p>
-                <img className="sm_svg" src="img/svg/copyright.svg" alt={1} />{" "}
+                <img className="sm_svg" src="img/svg/copyright.svg" alt="" />{" "}
                 {new Date().getFullYear()} - All Rights Reserved Saravan
               </p>
             </div>
@@ -46,7 +46,7 @@ export const Copyright2 = () => {
             </div> */}
           </div>
           <div className="nicolas_sm_totop">
-            <img className="sm_svg" src="img/svg/down_arrow.svg" alt={1} />
+            <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
             <a className="nicolas_sm_full_link" href="#" />
           </div>
         </div>

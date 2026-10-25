@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const Service = ({ title = "My services", sectionNumber = "03" }) => {
+const Service = ({ title = "My services", sectionNumber = "03", servicePage = false }) => {
   return (
     <div className="nicolas_sm_section" id="service">
-      <div className="nicolas_sm_service">
+      <div className={`nicolas_sm_service${servicePage ? " servicepage" : ""}`}>
         <div className="container">
           <div className="service_in">
             <div className="nicolas_sm_main_title">
@@ -21,7 +21,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                 </p>
               </div>
               <div className="right">
-                <Link href="service">(( All Services ))</Link>
+                {!servicePage && <Link href="/service">(( All Services ))</Link>}
               </div>
             </div>
             <div className="extra_container">
@@ -39,7 +39,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/1.jpg"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -54,7 +54,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/2.jpg"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -69,7 +69,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/3.jpg"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -84,7 +84,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/4.jpg"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>
@@ -99,7 +99,7 @@ const Service = ({ title = "My services", sectionNumber = "03" }) => {
                         <img
                           className="interactive_image"
                           src="img/portfolio/5.jpg"
-                          alt={1}
+                          alt=""
                         />
                       </div>
                     </li>

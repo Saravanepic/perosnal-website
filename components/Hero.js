@@ -38,7 +38,7 @@ const Hero = () => {
               <img
                 className="sm_svg bounce"
                 src="img/svg/down_arrow.svg"
-                alt={1}
+                alt=""
               />
             </span>
           </div>
@@ -61,13 +61,13 @@ const Hero = () => {
                     <h3>What i do</h3>
                     <p>
                     <b>Transforming Ideas into Stunning Web Experience.</b> 
-                    <br/>Website Development / Shopify / Wordpress / Woocommerce / Dukaan / React and Next JS / Website Consulatation etc.........
+                    <br/>Website Development / Shopify / Wordpress / Woocommerce / Dukaan / React and Next JS / Website Consultation
                     </p>
                   </div>
                 </div>
                 <div className="center">
                   <span>
-                    <img src="img/hero/Hero.png" alt="Saravan Pic" loading="lazy"/>
+                    <img src="img/hero/Hero.png" alt="Saravan, freelance Shopify and web developer" fetchPriority="high" />
                   </span>
                 </div>
                 <div className="right">
@@ -77,7 +77,7 @@ const Hero = () => {
                     <p>
                       Email <CopyEmail />
                       <br /><br />
-                      Phone Number<br/> <a href="https://wa.me/9494962048?text=Hello, I am reaching out for some work to be done" target="_blank">9494962048</a>
+                      Phone Number<br/> <a href="https://wa.me/919494962048?text=Hello, I am reaching out for some work to be done" target="_blank" rel="noopener noreferrer">+91 94949 62048</a>
                     </p>
                   </div>
                   <div className="info_list">
@@ -89,7 +89,7 @@ const Hero = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/facebook.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </li>
@@ -98,7 +98,7 @@ const Hero = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/twitter.svg"
-                            alt={2}
+                            alt=""
                           />
                         </a>
                       </li>
@@ -107,16 +107,16 @@ const Hero = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/instagram.svg"
-                            alt={3}
+                            alt=""
                           />
                         </a>
                       </li> */}
                       <li>
-                        <a href="https://www.linkedin.com/in/saravana-krishna-4a6851171/">
+                        <a href="https://www.linkedin.com/in/saravana-krishna/">
                           <img
                             className="sm_svg"
                             src="img/svg/linkedin.svg"
-                            alt={4}
+                            alt=""
                           />
                         </a>
                       </li>
@@ -125,7 +125,7 @@ const Hero = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/behance.svg"
-                            alt={5}
+                            alt=""
                           />
                         </a>
                       </li> */}

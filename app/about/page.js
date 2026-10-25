@@ -5,6 +5,12 @@ import Partners from "@/components/Partners";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import Link from "next/link";
+export const metadata = {
+  title: "About — Shopify & Next.js Developer, Bangalore",
+  description:
+    "Saravan is a Bangalore-based Shopify Expert and React/Next.js developer with 6+ years of experience and 100+ e-commerce builds, working as a white-label development partner for agencies and directly with D2C brands.",
+  alternates: { canonical: "/about" },
+};
 const page = () => {
   return (
     <NikolasLayout>
@@ -12,12 +18,12 @@ const page = () => {
       <div className="nicolas_sm_page_title mb-0">
         <div className="container">
           <div className="page_title_in">
-            <h3>
+            <h1>
               <span className="stroke_text">Hi from </span>
-              <span className="underline">Saravan,</span>
+              <span className="underline">Saravan,</span>{" "}
               <span className="stroke_text">a </span>
               <span className="underline">Web developer </span>
-            </h3>
+            </h1>
           </div>
         </div>
       </div>
@@ -32,7 +38,7 @@ const page = () => {
                 className="popup-youtube"
                 href="https://www.youtube.com/watch?v=7e90gBu4pas"
               >
-                <img className="sm_svg" src="img/svg/playback.svg" alt={1} />
+                <img className="sm_svg" src="img/svg/playback.svg" alt="" />
               </a>
             </div>
           </div>
@@ -53,7 +59,7 @@ const page = () => {
                     <div className="space" />
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/1.png" alt={1} />
+                        <img src="img/about/1.png" alt="" />
                       </div>
                       <div className="title">
                         <span>Front End</span>
@@ -77,7 +83,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/2.png" alt={2} />
+                        <img src="img/about/2.png" alt="" />
                       </div>
                       <div className="title">
                         <span>JS Tech</span>
@@ -101,7 +107,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/3.png" alt={3} />
+                        <img src="img/about/3.png" alt="" />
                       </div>
                       <div className="title">
                         <span>Shopify</span>
@@ -125,7 +131,7 @@ const page = () => {
                     <div className="space"></div>
                     <div className="box">
                       <div className="icon">
-                        <img src="img/about/4.png" alt={4} />
+                        <img src="img/about/4.png" alt="" />
                       </div>
                       <div className="title">
                         <span>WordPress</span>
@@ -305,7 +311,7 @@ const page = () => {
               </p>
             </div>
             <div className="right">
-              <Link href="https://wa.me/9494962048?text=Hello,%20I%20am%20reaching%20out%20for%20some%20collobaration%20work%20to%20be%20done">(( Get in Touch ))</Link>
+              <Link href="https://wa.me/919494962048?text=Hello,%20I%20am%20reaching%20out%20for%20some%20collaboration%20work%20to%20be%20done">(( Get in Touch ))</Link>
             </div>
           </div>
         </div>

@@ -39,67 +39,67 @@ const shopifyprojectsData = [
     url:"https://keikanaturals.com/",
   },
   {
-    id: 7,
+    id: 6,
     name: "Castle Beds",
     tag:"Shopify | Custom UI",
     url:"https://castlebeds.com/",
   },
   {
-    id: 8,
+    id: 7,
     name: "Cherri Cafe",
     tag:"Shopify | Custom UI",
     url:"https://shop.cherricafe.com/",
   },
   {
-    id: 9,
+    id: 8,
     name: "Charm N Cherish",
     tag:"Shopify | Custom UI",
     url:"https://www.charmncherish.com/",
   },
   {
-    id: 10,
+    id: 9,
     name: "Dosamigas",
     tag:"Shopify | Custom UI",
     url:"https://dosamigas.com/",
   },
   {
-    id: 11,
+    id: 10,
     name: "Sip & Tipple",
     tag:"Shopify | Custom UI",
     url:"https://sipandtipple.com/",
   },
   {
-    id: 12,
+    id: 11,
     name: "VR Labs",
     tag:"Shopify | Custom UI",
     url:"https://www.vrblabs.com/",
   },
   {
-    id: 13,
+    id: 12,
     name: "Lamiglas",
     tag:"Shopify | Custom UI",
     url:"https://www.lamiglas.com/",
   },
   {
-    id: 14,
+    id: 13,
     name: "HFO",
     tag:"Shopify | Custom UI",
     url:"https://www.hempfactoryoutlet.com/",
   },
   {
-    id: 15,
+    id: 14,
     name: "Yuyo Botanics",
     tag:"Shopify | Custom UI",
     url:"https://www.yuyobotanics.com/",
   },
   {
-    id: 16,
+    id: 15,
     name: "djbravo47",
     tag:"Shopify | Theme Based",
     url:"https://www.djb47.com/",
   },
   {
-    id: 17,
+    id: 16,
     name: "Soul Sings",
     tag:"Shopify | Theme Based",
     url:"https://soulslings.com/",
@@ -183,61 +183,61 @@ const shopifyprojectsData = [
     url:"https://jcbags.com/",
   },
   {
-    id: 29,
+    id: 30,
     name: "Pure Spring Nutrition",
     tag:"Shopify | Custom UI",
     url:"https://purespringnutrition.com/",
   },
   {
-    id: 30,
+    id: 31,
     name: "ENVSN Festival",
     tag:"Shopify | Custom UI",
     url:"https://envsnfestival.com/",
   },
   {
-    id: 31,
+    id: 32,
     name: "River Tree Skylights",
     tag:"Shopify | Custom UI",
     url:"https://rivertreeskylights.com/",
   },
   {
-    id: 32,
+    id: 33,
     name: "Seavoir",
     tag:"Shopify | Custom UI",
     url:"https://seavoir.com/",
   },
   {
-    id: 33,
+    id: 34,
     name: "Alive & Well",
     tag:"Shopify | Custom UI",
     url:"https://aliveandwellaustin.shop/",
   },
   {
-    id: 34,
+    id: 35,
     name: "Blum by Teyonah",
     tag:"Shopify | Custom UI",
     url:"https://www.blumbyteyonah.com/",
   },
   {
-    id: 35,
+    id: 36,
     name: "Westernways",
     tag:"Shopify | Custom UI",
     url:"https://westernways.com/",
   },
   {
-    id: 36,
+    id: 37,
     name: "Nostrum Fashion",
     tag:"Shopify | Custom UI",
     url:"https://www.nostrumfashion.com/",
   },
   {
-    id: 37,
+    id: 38,
     name: "Blues Coffee & Teaco",
     tag:"Shopify | Custom UI",
     url:"https://www.bluescoffeeandteaco.com/",
   },
   {
-    id: 38,
+    id: 39,
     name: "Kosha",
     tag:"Shopify | New Changes and Support",
     url:"http://kosha.co/",
@@ -274,7 +274,7 @@ const wordpressprojectsData = [
   {
     id: 4,
     name: "Brandenburg",
-    tag:"Wordpress | Custom Developemnt",
+    tag:"Wordpress | Custom Development",
     url:"https://b-one.com/",
   },
   {
@@ -292,31 +292,31 @@ const wordpressprojectsData = [
   {
     id: 7,
     name: "Rem Capital",
-    tag:"Wordpress | Custom Developemnt",
+    tag:"Wordpress | Custom Development",
     url:"https://remcapital.com/",
   },
   {
     id: 8,
     name: "Holdfolio",
-    tag:"Wordpress | Custom Developemnt",
+    tag:"Wordpress | Custom Development",
     url:"https://holdfolio.com/",
   },
   {
     id: 9,
     name: "GHS",
-    tag:"Wordpress | Custom Developemnt",
+    tag:"Wordpress | Custom Development",
     url:"https://grouphealthsolutions.com/",
   },
   {
     id: 10,
     name: "JMR Sporting",
-    tag:"Wordpress | Custom Developemnt | Support Works",
+    tag:"Wordpress | Custom Development | Support Works",
     url:"https://jmrsporting.com/",
   },
   {
     id: 11,
     name: "JMR Infotech",
-    tag:"Wordpress | Custom Developemnt | Support Works",
+    tag:"Wordpress | Custom Development | Support Works",
     url:"https://jmrinfotech.com/",
   },
   {
@@ -373,7 +373,7 @@ const otherprojectsData = [
   {
     id: 3,
     name: "Ranadey",
-    tag:"Angular | Collobaration",
+    tag:"Angular | Collaboration",
     url:"https://ranadey.com/",
   },
   {
@@ -501,7 +501,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/insti.png" alt={1} />
+                    <img src="img/portfolio/insti.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -515,7 +515,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -525,7 +525,7 @@ const Portfolio = ({ noTitle = false }) => {
                <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ojjsea.png" alt={1} />
+                    <img src="img/portfolio/ojjsea.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -539,7 +539,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -549,7 +549,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/wtn.png" alt={1} />
+                    <img src="img/portfolio/wtn.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -563,7 +563,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -573,7 +573,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ettetete.png" alt={1} />
+                    <img src="img/portfolio/ettetete.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -587,7 +587,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -597,7 +597,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mightylucky.png" alt={1} />
+                    <img src="img/portfolio/mightylucky.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -611,7 +611,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -621,7 +621,7 @@ const Portfolio = ({ noTitle = false }) => {
             <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/taproots.png" alt={1} />
+                    <img src="img/portfolio/taproots.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -635,7 +635,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -645,7 +645,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ENVSN.png" alt={3} />
+                    <img src="img/portfolio/ENVSN.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -659,7 +659,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -669,7 +669,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/TWN.png" alt={1} />
+                    <img src="img/portfolio/TWN.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -683,7 +683,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -693,7 +693,7 @@ const Portfolio = ({ noTitle = false }) => {
                 <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/EG.png" alt={5} />
+                    <img src="img/portfolio/EG.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -707,7 +707,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -717,7 +717,7 @@ const Portfolio = ({ noTitle = false }) => {
               {/* <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mutual.png" alt={2} />
+                    <img src="img/portfolio/mutual.png" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -731,7 +731,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -778,7 +778,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                   </Link>
                 </div>

@@ -61,14 +61,14 @@ const Blog = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/1.jpg" alt={1} />
+                      <img src="img/blog/1.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -94,14 +94,14 @@ const Blog = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/2.jpg" alt={2} />
+                      <img src="img/blog/2.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -127,14 +127,14 @@ const Blog = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/3.jpg" alt={3} />
+                      <img src="img/blog/3.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"

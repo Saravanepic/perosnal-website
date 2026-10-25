@@ -75,7 +75,7 @@ export default class TestimonialSlider extends Component {
               </div>
               <div className="center">
                 <p>
-                  Happy customers give impactfull and positive feedback
+                  Happy customers give impactful and positive feedback
                   on my services, customer supports &amp; etc.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default class TestimonialSlider extends Component {
                       this.previous();
                     }}
                   >
-                    <img className="sm_svg" src="img/svg/arrow.svg" alt={1} />
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
                   </a>
                   <a
                     className="next "
@@ -99,7 +99,7 @@ export default class TestimonialSlider extends Component {
                       this.next();
                     }}
                   >
-                    <img className="sm_svg" src="img/svg/arrow.svg" alt={2} />
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
                   </a>
                 </div>
               </div>
@@ -116,14 +116,14 @@ export default class TestimonialSlider extends Component {
                   <div key={item.id}>
                     <div className="list_inner">
                       <div className="details">
-                        <img className="sm_svg" src="img/svg/quote.svg" alt={1} />
+                        <img className="sm_svg" src="img/svg/quote.svg" alt="" />
                         <p>
                         {item.content}
                         </p>
                       </div>
                       <div className="info">
                         <div className="image">
-                          <img src="img/testimonials/people.png" alt={1} />
+                          <img src="img/testimonials/people.png" alt="" />
                         </div>
                         <div className="job">
                           <h3>{item.name}</h3>

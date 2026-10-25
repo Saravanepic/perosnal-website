@@ -20,7 +20,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <div>
-                        <span>Stay up to date</span>
+                        <span>Get in touch</span>
                       </div>
                       <a href="tel:+919494962048">+91 9494962048</a>
                       <a href="mailto:saravan1996.krishna@gmail.com">saravan1996.krishna@gmail.com</a>
@@ -42,17 +42,17 @@ const Footer = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li> */}
                     <li>
-                      <a href="https://www.linkedin.com/in/saravana-krishna-4a6851171/" target="_blank">
+                      <a href="https://www.linkedin.com/in/saravana-krishna/" target="_blank">
                         <span>Linkedin</span>
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li>
@@ -62,7 +62,7 @@ const Footer = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li>
@@ -73,7 +73,7 @@ const Footer = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li>
@@ -85,7 +85,7 @@ const Footer = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li>
@@ -95,7 +95,7 @@ const Footer = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </a>
                     </li> */}

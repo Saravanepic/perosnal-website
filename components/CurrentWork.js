@@ -48,6 +48,57 @@ const CurrentWork = ({ noTitle = false }) => {
             <ul>
 
 
+            <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/maanthan.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Maanthan</span>
+                      <h3>
+                        Custom SASS Job Portal
+                      </h3>
+                    </div>
+                    <div className="right">
+                    <Link href="https://www.maanthan.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/portfolio/smoor.png" alt={4} />
+                  </div>
+                  <div className="title_holder">
+                    <div className="left">
+                      <span className="tag">Shopify Website</span>
+                      <h3>
+                        SMOOR - (WIP)
+                      </h3>
+                    </div>
+                    <div className="right">
+                    {/* <Link href="https://www.maanthan.com/" target="_blank">
+                        <img
+                          className="sm_svg"
+                          src="img/svg/down_arrow.svg"
+                          alt={1}
+                        />
+                      </Link> */}
+                    </div>
+                  </div>
+                </div>
+              </li>
+
                <li>
                 <div className="list_inner">
                   <div className="image">
@@ -236,49 +287,26 @@ const CurrentWork = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <span className="tag">Shopify Website - WIP</span>
+                      <span className="tag">Shopify Website</span>
                       <h3>
                         Cosmos Diamonds
                       </h3>
                     </div>
                     <div className="right">
-                    {/* <Link href="https://ojjsea.myshopify.com/" target="_blank">
+                    <Link href="https://cosmos.diamonds/" target="_blank">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
                           alt={1}
                         />
-                      </Link> */}
+                      </Link>
                     </div>
                   </div>
                 </div>
               </li>
 
             
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/maanthan.png" alt={4} />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <span className="tag">SASS Portal - WIP</span>
-                      <h3>
-                        Custom Job Portal
-                      </h3>
-                    </div>
-                    <div className="right">
-                    {/* <Link href="" target="_blank">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt={1}
-                        />
-                      </Link> */}
-                    </div>
-                  </div>
-                </div>
-              </li>
+             
 
              
            

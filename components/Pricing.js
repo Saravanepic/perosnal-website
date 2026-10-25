@@ -62,7 +62,7 @@ const Pricing = () => {
                           </li>
                           <li>
                             <span />
-                            <p>Additional Templtes - 100$ / template</p>
+                            <p>Additional templates - $100 / template</p>
                           </li>
                         </ul>
                       </div>
@@ -73,7 +73,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Shopify Website" />
@@ -125,7 +125,7 @@ const Pricing = () => {
                           </li>
                           <li>
                             <span />
-                            <p>Additional Templtes - 100$ / template</p>
+                            <p>Additional templates - $100 / template</p>
                           </li>
                         </ul>
                       </div>
@@ -136,7 +136,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Wordpress Website" />
@@ -149,7 +149,7 @@ const Pricing = () => {
                       <div className="info">
                         <h3 className="plan">Custom Development</h3>
                         <h3 className="price">
-                          <span>Starts @</span> $30<span>/ hour</span>
+                          <span>Starts @</span> $35<span>/ hour</span>
                         </h3>
                       </div>
                       <div className="features">
@@ -187,7 +187,7 @@ const Pricing = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </span>
                       <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Need help with custom development" />

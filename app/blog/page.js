@@ -58,7 +58,7 @@ const page = () => {
               <div className="search">
                 <input type="text" placeholder="Search in blog" />
                 <input type="submit" defaultValue="" />
-                <img className="sm_svg" src="img/svg/search.svg" alt={1} />
+                <img className="sm_svg" src="img/svg/search.svg" alt="" />
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const page = () => {
             <Slider {...sliderProps.blogHeroSlider} className="blog_slider">
               <div className="blog_hero_in">
                 <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt={1} />
+                  <img src="img/thumbs/4-2.jpg" alt="" />
                   <div className="main" data-bg-img="img/blog/4.jpg" />
                 </div>
                 <div className="news">
@@ -101,7 +101,7 @@ const page = () => {
               </div>
               <div className="blog_hero_in">
                 <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt={1} />
+                  <img src="img/thumbs/4-2.jpg" alt="" />
                   <div className="main" data-bg-img="img/blog/8.jpg" />
                 </div>
                 <div className="news">
@@ -128,7 +128,7 @@ const page = () => {
               </div>
               <div className="blog_hero_in">
                 <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt={1} />
+                  <img src="img/thumbs/4-2.jpg" alt="" />
                   <div className="main" data-bg-img="img/blog/9.jpg" />
                 </div>
                 <div className="news">
@@ -185,14 +185,14 @@ const page = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/1.jpg" alt={1} />
+                      <img src="img/blog/1.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -218,14 +218,14 @@ const page = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/2.jpg" alt={2} />
+                      <img src="img/blog/2.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -251,14 +251,14 @@ const page = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/3.jpg" alt={3} />
+                      <img src="img/blog/3.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -284,14 +284,14 @@ const page = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/5.jpg" alt={5} />
+                      <img src="img/blog/5.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"
@@ -317,14 +317,14 @@ const page = () => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
                   </div>
                   <div className="right">
                     <div className="image">
-                      <img src="img/blog/6.jpg" alt={6} />
+                      <img src="img/blog/6.jpg" alt="" />
                       <Link
                         className="nicolas_sm_full_link"
                         href="blog_details"

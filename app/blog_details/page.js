@@ -1,5 +1,10 @@
 import { Copyright2 } from "@/layouts/Copyright";
 import NikolasLayout from "@/layouts/NikolasLayout";
+export const metadata = {
+  title: "Blog",
+  alternates: { canonical: "/blog_details" },
+  robots: { index: false, follow: true },
+};
 const page = () => {
   return (
     <NikolasLayout noFooter>
@@ -16,7 +21,7 @@ const page = () => {
               <div className="info_box">
                 <div className="info">
                   <div className="image">
-                    <img src="img/blog/7.jpg" alt={7} />
+                    <img src="img/blog/7.jpg" alt="" />
                   </div>
                   <div className="title">
                     <span>Written by</span>
@@ -32,7 +37,7 @@ const page = () => {
           </div>
         </div>
         <div className="hero_image">
-          <img src="img/blog/8.jpg" alt={8} />
+          <img src="img/blog/8.jpg" alt="" />
         </div>
         {/* Details */}
         <div className="container">
@@ -61,7 +66,7 @@ const page = () => {
                   <img
                     className="sm_svg"
                     src="img/svg/left_quotes.svg"
-                    alt={1}
+                    alt=""
                   />
                   <p>
                     On the other hand, we denounce with righteous indignation
@@ -92,7 +97,7 @@ const page = () => {
                     suscipit laboriosam,
                   </p>
                   <div className="image">
-                    <img src="img/blog/9.jpg" alt={9} />
+                    <img src="img/blog/9.jpg" alt="" />
                   </div>
                   <h3>Weaving Visual Narratives</h3>
                   <p>
@@ -125,7 +130,7 @@ const page = () => {
                             <img
                               className="sm_svg"
                               src="img/svg/facebook.svg"
-                              alt={1}
+                              alt=""
                             />
                           </a>
                         </li>
@@ -134,7 +139,7 @@ const page = () => {
                             <img
                               className="sm_svg"
                               src="img/svg/twitter.svg"
-                              alt={2}
+                              alt=""
                             />
                           </a>
                         </li>
@@ -143,7 +148,7 @@ const page = () => {
                             <img
                               className="sm_svg"
                               src="img/svg/instagram.svg"
-                              alt={3}
+                              alt=""
                             />
                           </a>
                         </li>
@@ -152,7 +157,7 @@ const page = () => {
                             <img
                               className="sm_svg"
                               src="img/svg/linkedin.svg"
-                              alt={4}
+                              alt=""
                             />
                           </a>
                         </li>
@@ -181,7 +186,7 @@ const page = () => {
                   />
                   <div className="button">
                     <a href="#">
-                      Post Comment <img src="img/header/arrow.png" alt={1} />
+                      Post Comment <img src="img/header/arrow.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -194,7 +199,7 @@ const page = () => {
                   <input type="text" placeholder="Search" />
                   {/* <input type="submit" defaultValue="" /> */}
                   <button className="search_btn">
-                    <img className="sm_svg" src="img/svg/search.svg" alt={1} />
+                    <img className="sm_svg" src="img/svg/search.svg" alt="" />
                   </button>
                 </div>
                 <div className="categories">
@@ -211,7 +216,7 @@ const page = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/arrow.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </div>
@@ -225,7 +230,7 @@ const page = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/arrow.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </div>
@@ -239,7 +244,7 @@ const page = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/arrow.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </div>
@@ -253,7 +258,7 @@ const page = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/arrow.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </div>
@@ -267,7 +272,7 @@ const page = () => {
                           <img
                             className="sm_svg"
                             src="img/svg/arrow.svg"
-                            alt={1}
+                            alt=""
                           />
                         </a>
                       </div>
@@ -283,7 +288,7 @@ const page = () => {
                       <div className="list_inner">
                         <div className="image">
                           <a href="#">
-                            <img src="img/blog/10.jpg" alt={10} />
+                            <img src="img/blog/10.jpg" alt="" />
                           </a>
                         </div>
                         <div className="info">
@@ -305,7 +310,7 @@ const page = () => {
                       <div className="list_inner">
                         <div className="image">
                           <a href="#">
-                            <img src="img/blog/11.jpg" alt={11} />
+                            <img src="img/blog/11.jpg" alt="" />
                           </a>
                         </div>
                         <div className="info">
@@ -327,7 +332,7 @@ const page = () => {
                       <div className="list_inner">
                         <div className="image">
                           <a href="#">
-                            <img src="img/blog/12.jpg" alt={12} />
+                            <img src="img/blog/12.jpg" alt="" />
                           </a>
                         </div>
                         <div className="info">

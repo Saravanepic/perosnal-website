@@ -1,9 +1,10 @@
-import SwiperCore, {
+import SwiperCore from "swiper";
+import {
   Autoplay,
   EffectFade,
   Navigation,
   Pagination,
-} from "swiper";
+} from "swiper/modules";
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
 export const sliderProps = {
   testimonial: {
@@ -50,7 +51,7 @@ export const sliderProps = {
         // progress animation
         var scale, translateX;
         var progressDOM = document.querySelector(".nicolas_sm_swiper_progress");
-        if (progressDOM.classList.contains("fill")) {
+        if (progressDOM && progressDOM.classList.contains("fill")) {
           translateX = "0px";
           scale = parseInt((current / total) * 100) / 100;
         } else {
@@ -58,19 +59,9 @@ export const sliderProps = {
           translateX =
             ((current - 1) * parseInt((100 / total) * 100)) / 100 + "px";
         }
-        document.querySelector(
-          `.all_span`
-        ).style.transform = `translate3d(${translateX},0px,0px) scaleX(${scale}) scaleY(1)`;
 
-        if (current < 10) {
-          current = "0" + current;
-        }
-        if (total < 10) {
-          total = "0" + total;
-        }
-
-        // document.querySelector(`.current`).innerHTML = current;
-        // document.querySelector(`.total`).innerHTML = total;
+        // Swiper replaces the pagination element's innerHTML with this return value
+        return `<div class="my_pagination_in"><span class="pagination_progress"><span class="all"><span class="all_span" style="transform: translate3d(${translateX},0px,0px) scaleX(${scale}) scaleY(1)"></span></span></span></div>`;
       },
     },
     breakpoints: {
