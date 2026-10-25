@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WaterCards from "@/components/WaterCards";
 import Marquee from "react-fast-marquee";
 
 const shopifyprojectsData = [
@@ -457,6 +458,7 @@ const Portfolio = ({ noTitle = false }) => {
   return (
     <div className="nicolas_sm_section" id="portfolio">
       <div className="nicolas_sm_portfolio">
+        <WaterCards />
         <div className="nicolas_sm_extra_title">
           {!noTitle && (
             <div className="container">
