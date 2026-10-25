@@ -27,14 +27,14 @@ const Hero = () => {
             </div>
             <div className="right">
               <h3>
-                <span className="inline_text">Freelance WEB<br/>developer</span>
+                <span className="inline_text">Shopify &amp; Web<br/>developer</span>
               </h3>
               <h3 className="stroke_text">Based in Bangalore</h3>
             </div>
           </div>
           <div className="hero_scroll_title">
             <span>
-              01 // 06 - scroll{" "}
+              01 // 05 - scroll{" "}
               <img
                 className="sm_svg bounce"
                 src="img/svg/down_arrow.svg"
@@ -51,23 +51,22 @@ const Hero = () => {
                     <img src="img/hero/shape.png" alt="shape" />
                     <h3>About me</h3>
                     <p>
-                      {/* Hello, my name’s <b>Saravan</b>,  */}
-                      I'm a versatile <b>Dynamic and Creative Freelance web developer</b> blending clean code with creative solutions.
-                       I love bridging gaps between design and functionality. Let’s build something fluid, scalable, and user-obsessed.
+                      I'm a <b>Shopify specialist and freelance web developer</b> with 8+ years of experience.
+                      I build fast, conversion-focused stores and websites for agencies and brands, bridging design and code.
                     </p>
                   </div>
                   <div className="info_list">
                     <img src="img/hero/shape.png" alt="shape" />
-                    <h3>What i do</h3>
+                    <h3>What I do</h3>
                     <p>
-                    <b>Transforming Ideas into Stunning Web Experience.</b> 
-                    <br/>Website Development / Shopify / Wordpress / Woocommerce / Dukaan / React and Next JS / Website Consultation
+                    <b>Shopify stores that look great and sell.</b>
+                    <br/>Custom Shopify themes / Shopify CRO / Shopify apps &amp; integrations, plus WordPress, WooCommerce and React / Next.js builds.
                     </p>
                   </div>
                 </div>
                 <div className="center">
                   <span>
-                    <img src="img/hero/Hero.png" alt="Saravan, freelance Shopify and web developer" fetchPriority="high" />
+                    <img src="img/hero/Hero.webp" alt="Saravan, freelance Shopify and web developer" fetchPriority="high" />
                   </span>
                 </div>
                 <div className="right">

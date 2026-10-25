@@ -49,7 +49,7 @@ const capabilities = [
 const reasons = [
   { label: "White-label", value: "Your brand, NDA signed" },
   { label: "Track record", value: "100+ e-commerce builds" },
-  { label: "Experience", value: "6+ years on Shopify" },
+  { label: "Experience", value: "8+ years in web development" },
   { label: "Response", value: "Reply within 24 hours" },
 ];
 

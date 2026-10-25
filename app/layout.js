@@ -15,7 +15,7 @@ export const metadata = {
     default: "Saravan — Shopify Expert & React Developer | Bangalore, India",
     template: "%s | Saravan",
   },
-  description: "Hire Saravan — a Shopify Expert and React/Next.js developer based in Bangalore, India with 6+ years of experience. Custom Shopify themes, CRO, Shopify apps, WordPress and Next.js, as a white-label development partner for agencies and directly for brands worldwide.",
+  description: "Hire Saravan — a Shopify Expert and React/Next.js developer based in Bangalore, India with 8+ years of experience. Custom Shopify themes, CRO, Shopify apps, WordPress and Next.js, as a white-label development partner for agencies and directly for brands worldwide.",
   keywords: [
     "shopify developer india",
     "shopify expert bangalore",
@@ -56,7 +56,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Saravan — Freelance Shopify Developer & Web Developer | Bangalore",
-    description: "Hire Saravan — a freelance Shopify developer and web developer in Bangalore with 6+ years of experience. Custom Shopify themes, apps, WordPress, and performance optimization.",
+    description: "Hire Saravan — a freelance Shopify developer and web developer in Bangalore with 8+ years of experience. Custom Shopify themes, apps, WordPress, and performance optimization.",
     url: "https://saravan.dev",
     siteName: "Saravan.dev",
     images: [
@@ -73,7 +73,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Saravan — Freelance Shopify Developer & Web Developer",
-    description: "6+ years building Shopify stores, custom themes & web apps. Available for freelance projects worldwide.",
+    description: "8+ years building Shopify stores, custom themes & web apps. Available for freelance projects worldwide.",
     images: ["https://cdn.shopify.com/s/files/1/0580/4346/5911/files/OG_New.png?v=1751919368"],
   },
   icons: {
@@ -104,7 +104,7 @@ const jsonLd = {
       "url": "https://saravan.dev",
       "image": "https://cdn.shopify.com/s/files/1/0580/4346/5911/files/OG_New.png?v=1751919368",
       "jobTitle": "Shopify Expert | React & Next.js Developer | CRO Specialist",
-      "description": "Saravan is a Shopify Expert and React/Next.js developer based in Bangalore, India, with 6+ years of experience. He specialises in custom Shopify theme development, Shopify CRO (conversion rate optimisation), Shopify apps, React and Next.js web applications, and WordPress for agencies and businesses worldwide.",
+      "description": "Saravan is a Shopify Expert and React/Next.js developer based in Bangalore, India, with 8+ years of experience. He specialises in custom Shopify theme development, Shopify CRO (conversion rate optimisation), Shopify apps, React and Next.js web applications, and WordPress for agencies and businesses worldwide.",
       "knowsAbout": [
         "Shopify Theme Development",
         "Shopify CRO",
@@ -175,11 +175,11 @@ const jsonLd = {
       "@id": "https://saravan.dev/#profilepage",
       "url": "https://saravan.dev",
       "name": "Saravan — Freelance Shopify Developer & Web Developer Portfolio",
-      "description": "Portfolio of Saravan, a freelance Shopify developer and web developer based in Bangalore with 6+ years of experience delivering custom Shopify themes, e-commerce stores, and web applications for clients worldwide.",
+      "description": "Portfolio of Saravan, a freelance Shopify developer and web developer based in Bangalore with 8+ years of experience delivering custom Shopify themes, e-commerce stores, and web applications for clients worldwide.",
       "mainEntity": { "@id": "https://saravan.dev/#person" },
       "about": { "@id": "https://saravan.dev/#person" },
       "datePublished": "2024-01-01",
-      "dateModified": "2026-06-06T00:00:00+00:00",
+      "dateModified": "2026-10-25T00:00:00+00:00",
       "inLanguage": "en",
       "isPartOf": { "@id": "https://saravan.dev/#website" }
     },
@@ -192,7 +192,7 @@ const jsonLd = {
           "name": "What does Saravan specialize in as a freelance developer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Saravan specializes in Shopify theme development, custom Shopify apps, Shopify Liquid, and WordPress development. With 6+ years of experience, he builds high-performance e-commerce stores and web applications for agencies and businesses worldwide."
+            "text": "Saravan specializes in Shopify theme development, custom Shopify apps, Shopify Liquid, and WordPress development. With 8+ years of experience, he builds high-performance e-commerce stores and web applications for agencies and businesses worldwide."
           }
         },
         {
@@ -248,7 +248,7 @@ const jsonLd = {
           "name": "Who is a top Shopify developer in Bangalore India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Saravan is a highly experienced Shopify developer and Shopify Expert based in Bangalore, India, with 6+ years of experience building custom Shopify themes, Shopify apps, and CRO solutions for e-commerce brands and agencies globally."
+            "text": "Saravan is a highly experienced Shopify developer and Shopify Expert based in Bangalore, India, with 8+ years of experience building custom Shopify themes, Shopify apps, and CRO solutions for e-commerce brands and agencies globally."
           }
         }
       ]

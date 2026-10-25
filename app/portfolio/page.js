@@ -37,7 +37,7 @@ const page = () => {
           >
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/Maga.png" alt="" />
+                <img src="img/portfolio/Maga.webp" alt="" />
                   {/* <img src="img/slider/1.jpg" alt="" /> */}
                   <div className="details">
                     <div className="category">
@@ -55,7 +55,7 @@ const page = () => {
               </SwiperSlide>
                <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/blues.png" alt="" />
+                <img src="img/portfolio/blues.webp" alt="" />
                   {/* <img src="img/slider/1.jpg" alt="" /> */}
                   <div className="details">
                     <div className="category">
@@ -73,7 +73,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/TWN.png" alt="" />
+                  <img src="img/portfolio/TWN.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>TWN</span>
@@ -90,7 +90,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                  <img src="img/portfolio/Homely.png" alt="" />
+                  <img src="img/portfolio/Homely.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Homely</span>
@@ -107,7 +107,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/LaurusBio.png" alt="" />
+                <img src="img/portfolio/LaurusBio.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Laurus Bio</span>
@@ -124,7 +124,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/aliveandwellaustin.png" alt="" />
+                <img src="img/portfolio/aliveandwellaustin.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Alive & Well Austin</span>
@@ -141,7 +141,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/roasterspack.png" alt="" />
+                <img src="img/portfolio/roasterspack.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>The Roasters Pack</span>
@@ -158,7 +158,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/dosamigas.png" alt="" />
+                <img src="img/portfolio/dosamigas.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Dosamigas</span>
@@ -175,7 +175,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/mutuals.png" alt="" />
+                <img src="img/portfolio/mutuals.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Mutuals</span>
@@ -192,7 +192,7 @@ const page = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <div className="list_inner">
-                <img src="img/portfolio/travelearth.png" alt="" />
+                <img src="img/portfolio/travelearth.webp" alt="" />
                   <div className="details">
                     <div className="category">
                       <span>Travel Earth</span>

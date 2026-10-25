@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About — Shopify & Next.js Developer, Bangalore",
   description:
-    "Saravan is a Bangalore-based Shopify Expert and React/Next.js developer with 6+ years of experience and 100+ e-commerce builds, working as a white-label development partner for agencies and directly with D2C brands.",
+    "Saravan is a Bangalore-based Shopify Expert and React/Next.js developer with 8+ years of experience and 100+ e-commerce builds, working as a white-label development partner for agencies and directly with D2C brands.",
   alternates: { canonical: "/about" },
 };
 const page = () => {

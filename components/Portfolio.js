@@ -501,7 +501,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/insti.png" alt="" />
+                    <img src="img/portfolio/insti.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -525,7 +525,7 @@ const Portfolio = ({ noTitle = false }) => {
                <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ojjsea.png" alt="" />
+                    <img src="img/portfolio/ojjsea.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -549,7 +549,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/wtn.png" alt="" />
+                    <img src="img/portfolio/wtn.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -573,7 +573,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ettetete.png" alt="" />
+                    <img src="img/portfolio/ettetete.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -597,7 +597,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mightylucky.png" alt="" />
+                    <img src="img/portfolio/mightylucky.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -621,7 +621,7 @@ const Portfolio = ({ noTitle = false }) => {
             <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/taproots.png" alt="" />
+                    <img src="img/portfolio/taproots.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -645,7 +645,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ENVSN.png" alt="" />
+                    <img src="img/portfolio/ENVSN.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -669,7 +669,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/TWN.png" alt="" />
+                    <img src="img/portfolio/TWN.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -693,7 +693,7 @@ const Portfolio = ({ noTitle = false }) => {
                 <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/EG.png" alt="" />
+                    <img src="img/portfolio/EG.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -717,7 +717,7 @@ const Portfolio = ({ noTitle = false }) => {
               {/* <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mutual.png" alt="" />
+                    <img src="img/portfolio/mutual.webp" alt="" />
                   </div>
                   <div className="title_holder">
                     <div className="left">

@@ -9,7 +9,7 @@ const CurrentWork = ({ noTitle = false }) => {
           {!noTitle && (
             <div className="container">
               <div className="projects">
-                <span>04 // Currently Working on</span>
+                <span>03 // Currently Working on</span>
                 <Link href="portfolio">(( project all ))</Link>
               </div>
             </div>
@@ -51,7 +51,7 @@ const CurrentWork = ({ noTitle = false }) => {
             <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/maanthan.png" alt={4} />
+                    <img src="img/portfolio/maanthan.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -77,7 +77,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/smoor.png" alt={4} />
+                    <img src="img/portfolio/smoor.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -102,7 +102,7 @@ const CurrentWork = ({ noTitle = false }) => {
                <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/enough.png" alt={1} className="object-cover" />
+                    <img src="img/portfolio/enough.webp" alt={1} className="object-cover" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -127,7 +127,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/IB.png" alt={4} />
+                    <img src="img/portfolio/IB.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -152,7 +152,7 @@ const CurrentWork = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Timba.png" alt={4} />
+                    <img src="img/portfolio/Timba.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -177,7 +177,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/NLT.png" alt={4} />
+                    <img src="img/portfolio/NLT.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -204,7 +204,7 @@ const CurrentWork = ({ noTitle = false }) => {
                {/* <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ojjsea.png" alt={4} />
+                    <img src="img/portfolio/ojjsea.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -231,7 +231,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Granny.png" alt={4} />
+                    <img src="img/portfolio/Granny.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -257,7 +257,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/pupsentials.png" alt={4} />
+                    <img src="img/portfolio/pupsentials.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -283,7 +283,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/cd.png" alt={4} />
+                    <img src="img/portfolio/cd.webp" alt={4} />
                   </div>
                   <div className="title_holder">
                     <div className="left">

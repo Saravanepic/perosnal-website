@@ -1,13 +1,11 @@
 "use client";
 import About from "@/components/About";
-import AgencyTeaser from "@/components/AgencyTeaser";
 import Blog from "@/components/Blog";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Portfolio from "@/components/Portfolio";
 import CurrentWork from "@/components/CurrentWork";
 import Pricing from "@/components/Pricing";
-import Service from "@/components/Service";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import NikolasLayout from "@/layouts/NikolasLayout";
 
@@ -19,20 +17,14 @@ const page = () => {
       <Hero />
       {/* /Hero */}
       {/* About */}
-      <About />
+      <About nextSection="portfolio" />
       {/* /About */}
-      {/* Service */}
-      <Service />
-      {/* /Service */}
-      {/* Agencies */}
-      <AgencyTeaser />
-      {/* /Agencies */}
       {/* Portfolio */}
       <CurrentWork/>
       {/* <Portfolio /> */}
       {/* /Portfolio */}
       {/* Testimonials */}
-      <TestimonialSlider />
+      <TestimonialSlider sectionNumber="04" />
       {/* /Testimonials */}
       {/* Partners */}
       {/* <Partners /> */}

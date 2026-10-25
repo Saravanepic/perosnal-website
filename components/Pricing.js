@@ -7,7 +7,7 @@ const Pricing = () => {
         <div className="container">
           <div className="nicolas_sm_main_title">
             <div className="left">
-              <span>06 // Pricing plan</span>
+              <span>05 // Pricing plan</span>
             </div>
             <div className="center">
               <p>

@@ -13,12 +13,8 @@ const About = ({
               <span>{sectionTitle}</span>
             </div>
             <div className="center">
-              {/* <p>
-                I’m a bay-area born developer
-                based in Bangalore. I’m currently working as a Freelance Web Developer with agencies and companie's, creating connected brands, product commerce, and engaging web experiences.
-              </p> */}
               <p>
-                Bay Area roots, Bangalore hustle. I help agencies and brands build fast, engaging web experiences—from e-commerce to interactive platforms—through clean code and creative problem-solving.
+                Vizag roots, Bangalore hustle. For 8+ years I&apos;ve helped agencies and brands ship fast, high-converting Shopify stores and websites—through clean code and creative problem-solving.
               </p>
             </div>
             <div className="right">
@@ -40,13 +36,13 @@ const About = ({
                 <li>
                   <div className="list_inner">
                     <span>Experience</span>
-                    <h3>6.5 years experience</h3>
+                    <h3>8+ years experience</h3>
                   </div>
                 </li>
                 <li>
                   <div className="list_inner">
                     <span>Tech Journey</span>
-                    <h3>Coding Since 2017  </h3>
+                    <h3>Coding since 2017</h3>
                   </div>
                 </li>
                 <li>

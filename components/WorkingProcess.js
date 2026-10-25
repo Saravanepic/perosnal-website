@@ -8,8 +8,8 @@ const WorkingProcess = () => {
           </div>
           <div className="center">
             <p>
-              Over a half of decade of experience in interactive design and working with
-              some of the most talented people in the business
+              8+ years of shipping websites and Shopify stores alongside some of
+              the most talented agencies and brands in the business.
             </p>
           </div>
           <div className="right">

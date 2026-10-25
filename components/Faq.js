@@ -6,7 +6,7 @@ const faqData = [
     id: 1,
     title: "Are you a Shopify Expert based in India?",
     content:
-      "Yes. I am a freelance Shopify Expert based in Bangalore, India, with 6+ years of experience building custom Shopify themes, Shopify apps, and high-converting Shopify stores. I work with brands and agencies across India and worldwide, delivering production-ready Shopify solutions on time.",
+      "Yes. I am a freelance Shopify Expert based in Bangalore, India, with 8+ years of experience building custom Shopify themes, Shopify apps, and high-converting Shopify stores. I work with brands and agencies across India and worldwide, delivering production-ready Shopify solutions on time.",
   },
   {
     id: 2,
