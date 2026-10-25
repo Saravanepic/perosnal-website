@@ -7,8 +7,8 @@ const Hero = () => {
         <div className="container">
           <div className="hero_text">
             <div className="left">
-              <h3 className="stroke_text">Hi there! 👋</h3>
-              <h1>
+              <h3 className="stroke_text hero-blur-in" style={{ "--d": "0s" }}>Hi there! 👋</h3>
+              <h1 className="hero-blur-in" style={{ "--d": "0.15s" }}>
                 <span className="inline_text">
                   {/* Saravan Krishna */}
                   I'm Saravan
@@ -26,10 +26,10 @@ const Hero = () => {
               </h1>
             </div>
             <div className="right">
-              <h3>
+              <h3 className="hero-blur-in" style={{ "--d": "0.3s" }}>
                 <span className="inline_text">Shopify &amp; Web<br/>developer</span>
               </h3>
-              <h3 className="stroke_text">Based in Bangalore</h3>
+              <h3 className="stroke_text hero-blur-in" style={{ "--d": "0.45s" }}>Based in Bangalore</h3>
             </div>
           </div>
           <div className="hero_scroll_title">

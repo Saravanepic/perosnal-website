@@ -1,4 +1,5 @@
 "use client";
+import HeaderLights from "@/components/HeaderLights";
 import { nicolasUtility } from "@/utility";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -62,6 +63,7 @@ const Header = () => {
         <div className="overlay_el">
           <div className="overlay_bg" />
           <div className="overlay_content">
+            <HeaderLights />
             <div className="logo">
               <Link href="/">
                 <img src="img/logo/saravan_logo.png" alt="Saravan logo" />

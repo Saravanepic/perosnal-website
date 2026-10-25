@@ -3776,6 +3776,13 @@ img {
 /*	14) NICOLAS RESPONSIVE
 /*---------------------------------------------------*/
 
+
+@media (min-width: 1200px) {
+  .nicolas_sm_header .overlay_content {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+}
 @media (max-width: 1600px) {
   .container {
     max-width: 1200px;
