@@ -84,6 +84,7 @@ export default class TestimonialSlider extends Component {
                   <a
                     className="prev "
                     href="#"
+                    aria-label="Previous testimonial"
                     onClick={(e) => {
                       e.preventDefault();
                       this.previous();
@@ -94,6 +95,7 @@ export default class TestimonialSlider extends Component {
                   <a
                     className="next "
                     href="#"
+                    aria-label="Next testimonial"
                     onClick={(e) => {
                       e.preventDefault();
                       this.next();

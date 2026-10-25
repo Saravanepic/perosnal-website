@@ -51,7 +51,7 @@ const CurrentWork = ({ noTitle = false }) => {
             <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/maanthan.webp" alt={4} />
+                    <img src="img/portfolio/maanthan.webp" alt="Maanthan job portal screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -61,11 +61,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://www.maanthan.com/" target="_blank">
+                    <Link href="https://www.maanthan.com/" target="_blank" aria-label="Visit Maanthan" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -77,7 +77,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/smoor.webp" alt={4} />
+                    <img src="img/portfolio/smoor.webp" alt="SMOOR website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -87,11 +87,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    {/* <Link href="https://www.maanthan.com/" target="_blank">
+                    {/* <Link href="https://www.maanthan.com/" target="_blank" aria-label="Visit SMOOR" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link> */}
                     </div>
@@ -102,7 +102,7 @@ const CurrentWork = ({ noTitle = false }) => {
                <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/enough.webp" alt={1} className="object-cover" />
+                    <img src="img/portfolio/enough.webp" alt="ENOUGH website screenshot" className="object-cover" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -112,11 +112,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://weareenough.co/" target="_blank">
+                    <Link href="https://weareenough.co/" target="_blank" aria-label="Visit ENOUGH" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -127,7 +127,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/IB.webp" alt={4} />
+                    <img src="img/portfolio/IB.webp" alt="Ice Barrel website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -137,11 +137,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://icebarrel.com/" target="_blank">
+                    <Link href="https://icebarrel.com/" target="_blank" aria-label="Visit Ice Barrel" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -152,7 +152,7 @@ const CurrentWork = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Timba.webp" alt={4} />
+                    <img src="img/portfolio/Timba.webp" alt="Timba website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -162,11 +162,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://bytimba.com/" target="_blank">
+                    <Link href="https://bytimba.com/" target="_blank" aria-label="Visit Timba" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -177,7 +177,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/NLT.webp" alt={4} />
+                    <img src="img/portfolio/NLT.webp" alt="NLT website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -187,11 +187,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://newlondontech.com/" target="_blank">
+                    <Link href="https://newlondontech.com/" target="_blank" aria-label="Visit NLT" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -204,7 +204,7 @@ const CurrentWork = ({ noTitle = false }) => {
                {/* <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ojjsea.webp" alt={4} />
+                    <img src="img/portfolio/ojjsea.webp" alt="Ojjsea website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -214,11 +214,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://ojjsea.myshopify.com/" target="_blank">
+                    <Link href="https://ojjsea.myshopify.com/" target="_blank" aria-label="Visit Ojjsea" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -231,7 +231,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/Granny.webp" alt={4} />
+                    <img src="img/portfolio/Granny.webp" alt="Granny's Pickles website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -241,11 +241,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://grannyspickles.myshopify.com/" target="_blank">
+                    <Link href="https://grannyspickles.myshopify.com/" target="_blank" aria-label="Visit Granny's Pickles" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -257,7 +257,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/pupsentials.webp" alt={4} />
+                    <img src="img/portfolio/pupsentials.webp" alt="Pupsentials website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -267,11 +267,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://www.pupsentials.com/" target="_blank">
+                    <Link href="https://www.pupsentials.com/" target="_blank" aria-label="Visit Pupsentials" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -283,7 +283,7 @@ const CurrentWork = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/cd.webp" alt={4} />
+                    <img src="img/portfolio/cd.webp" alt="Cosmos Diamonds website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -293,11 +293,11 @@ const CurrentWork = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://cosmos.diamonds/" target="_blank">
+                    <Link href="https://cosmos.diamonds/" target="_blank" aria-label="Visit Cosmos Diamonds" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt=""
                         />
                       </Link>
                     </div>

@@ -19,7 +19,7 @@ const About = ({
             </div>
             <div className="right">
               <div className="scroll anchor">
-                <a href={`#${nextSection}`} />
+                <a href={`#${nextSection}`} aria-label="Scroll to next section" />
                 <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
               </div>
             </div>

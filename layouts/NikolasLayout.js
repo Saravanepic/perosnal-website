@@ -21,7 +21,7 @@ const NikolasLayout = ({ children, noFooter, onepage }) => {
       <div className="nicolas_sm_wrapper_all" data-magic-cursor="show">
         {/* Magic Cursor Values Are: "show" and "hide" */}
         {onepage ? <OnePageHeader /> : <Header />}
-        {children}
+        <main>{children}</main>
         {/* Footer */}
         {!noFooter && (
           <Fragment>

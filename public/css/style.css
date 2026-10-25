@@ -37,7 +37,7 @@ body {
 }
 body {
   color: #959595;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-size: 16px;
   letter-spacing: 0px;
   background-color: #171818;
@@ -64,7 +64,7 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
@@ -608,7 +608,7 @@ img {
 }
 .nicolas_sm_hero .hero_text .left h3,
 .nicolas_sm_hero .hero_text .left h1 {
-  font-family: "Bebas Neue";
+  font-family: var(--font-bebas);
   font-size: 120px;
   font-weight: 500;
   line-height: 1;
@@ -628,8 +628,8 @@ img {
   width: 31%;
   padding-right: 150px;
 }
-.nicolas_sm_hero .hero_text .right h3 {
-  font-family: "Bebas Neue";
+.nicolas_sm_hero .hero_text .right h2 {
+  font-family: var(--font-bebas);
   font-size: 120px;
   font-weight: 500;
   line-height: 1;
@@ -934,7 +934,7 @@ img {
 .nicolas_sm_about .list_inner span {
   display: block;
   color: 18px;
-  font-family: "Cabin";
+  font-family: var(--font-cabin);
   text-transform: capitalize;
   margin-bottom: 14px;
 }
@@ -962,7 +962,7 @@ img {
 .nicolas_sm_round h3 {
   color: #171818;
   font-size: 80px;
-  font-family: "Bebas Neue";
+  font-family: var(--font-bebas);
   font-weight: 500;
   margin-right: 35px;
   margin-bottom: 0;
@@ -1107,7 +1107,7 @@ img {
 }
 .nicolas_sm_extra_title h3 {
   font-size: 250px;
-  font-family: "Bebas Neue";
+  font-family: var(--font-bebas);
   font-weight: 500;
   line-height: 1;
   margin-right: 30px;
@@ -1745,7 +1745,7 @@ img {
 .nicolas_sm_footer .right li textarea {
   width: 100%;
   color: #959595;
-  font-family: "Montserrat" !important;
+  font-family: var(--font-montserrat) !important;
   font-size: 16px !important;
   background-color: transparent;
   border: none;
@@ -1951,7 +1951,7 @@ img {
   margin: 230px auto 120px auto;
 }
 .nicolas_sm_page_title h3 {
-  font-family: "Bebas Neue";
+  font-family: var(--font-bebas);
   font-size: 120px;
   font-weight: 500;
   line-height: 1;
@@ -2283,7 +2283,7 @@ img {
   top: 50%;
 }
 .nicolas_sm_service_details .nicolas_sm_page_title h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-size: 72px;
   font-weight: bold;
 }
@@ -3004,7 +3004,7 @@ img {
 }
 .nicolas_sm_blog_details .page_title_in > h3 {
   font-size: 72px;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-weight: bold;
   margin-bottom: 50px;
 }
@@ -3032,7 +3032,7 @@ img {
 .nicolas_sm_blog_details .page_title_in .title h3 {
   color: #fff;
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
 }
 .nicolas_sm_blog_details .hero_image img {
   width: 100%;
@@ -3382,7 +3382,7 @@ img {
   line-height: 60px;
   color: #959595;
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   background-color: #171818;
   border: none;
   border-radius: 10px;
@@ -3426,7 +3426,7 @@ img {
   background-color: #111212;
 }
 .nicolas_sm_contact .nicolas_sm_page_title h3 {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-size: 72px;
 }
 .nicolas_sm_contact .nicolas_sm_footer {
@@ -3801,7 +3801,7 @@ img {
 .nicolas_sm_hero .hero_text .left h1 {
     font-size: 70px;
   }
-  .nicolas_sm_hero .hero_text .right h3 {
+  .nicolas_sm_hero .hero_text .right h2 {
     font-size: 70px;
   }
   .nicolas_sm_hero .hero_text .right {
@@ -3968,7 +3968,7 @@ img {
 .nicolas_sm_hero .hero_text .left h1 {
     font-size: 45px;
   }
-  .nicolas_sm_hero .hero_text .right h3 {
+  .nicolas_sm_hero .hero_text .right h2 {
     font-size: 45px;
   }
   .nicolas_sm_hero .hero_scroll_title span {
@@ -4605,7 +4605,7 @@ img {
 .shopify_projects h2 {
   font-size: 70px;
   text-transform: uppercase;
-  font-family: 'Bebas Neue';
+  font-family: var(--font-bebas);
   line-height: 1;
   padding: 100px 0 0;
 }
@@ -4618,7 +4618,7 @@ img {
 .shopify_projects h2 {
   font-size: 70px;
   text-transform: uppercase;
-  font-family: 'Bebas Neue';
+  font-family: var(--font-bebas);
   line-height: 1;
   padding: 100px 0 40px;
 }
@@ -4682,7 +4682,7 @@ img {
 .shopify_projects_wrapper li .project_name {
   font-size: 20px;
   color: #fff;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-weight: 600;
   line-height: 1.2;
   margin: 0;

@@ -7,7 +7,7 @@ html {
 }
 .nicolas_sm_button button {
   border: 0;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   font-size: 16px;
   cursor: pointer;
 }
@@ -34,7 +34,7 @@ html {
 
 /* Page titles use <h1> for SEO; mirror the template's .nicolas_sm_page_title h3 styles */
 .nicolas_sm_page_title h1 {
-  font-family: "Bebas Neue";
+  font-family: var(--font-bebas);
   font-size: 120px;
   font-weight: 500;
   line-height: 1;
@@ -212,4 +212,64 @@ html {
 /* Hero photo: full brightness/opacity while the bubble passes behind it (normally only on hover) */
 .nicolas_sm_hero .center span img.bubble-behind {
   filter: brightness(1) opacity(1);
+}
+
+/* ---- Preloader without layout shift ----
+   The theme animated width/height, which Lighthouse counts as layout shift (CLS).
+   Same look, done with transforms instead. */
+#preloader:before {
+  transform-origin: left center;
+}
+#preloader:after {
+  transform-origin: right center;
+}
+.preloaded:before,
+.preloaded:after {
+  animation: preloadedCurtain 300ms ease-in-out 500ms forwards;
+}
+@keyframes preloadedCurtain {
+  from { transform: scaleX(1); }
+  to { transform: scaleX(0); }
+}
+.loader_line:before {
+  height: 100%;
+  transform: translateY(-50%) scaleY(0);
+  animation: loaderLineGrow 1000ms ease-in-out 0s forwards;
+}
+@keyframes loaderLineGrow {
+  from { transform: translateY(-50%) scaleY(0); }
+  to { transform: translateY(-50%) scaleY(1); }
+}
+.preloaded .loader_line {
+  height: 250px !important;
+}
+
+/* Portfolio card screenshots: crop to the box instead of squashing (Lighthouse image-aspect-ratio) */
+.nicolas_sm_portfolio .image img {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Portfolio slider: give slides their final size before Swiper initialises,
+   so they don't jump into place after hydration (CLS) */
+.nicolas_sm_portfolio_slider .swiper:not(.swiper-initialized) .swiper-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.nicolas_sm_portfolio_slider .swiper:not(.swiper-initialized) .swiper-slide {
+  flex-shrink: 0;
+  width: calc((100% - 90px) / 4);
+}
+@media (max-width: 1199px) {
+  .nicolas_sm_portfolio_slider .swiper:not(.swiper-initialized) .swiper-wrapper {
+    gap: 20px;
+  }
+  .nicolas_sm_portfolio_slider .swiper:not(.swiper-initialized) .swiper-slide {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 768px) {
+  .nicolas_sm_portfolio_slider .swiper:not(.swiper-initialized) .swiper-slide {
+    width: 100%;
+  }
 }

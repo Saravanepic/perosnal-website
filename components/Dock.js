@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Same five links as the header menu
 const items = [
@@ -61,6 +61,20 @@ const items = [
   },
 ];
 
+const SOUND_PREF = "ambient-sound"; // "on" | "off", remembered per visitor
+const readPref = () => {
+  try {
+    return localStorage.getItem(SOUND_PREF);
+  } catch {
+    return null;
+  }
+};
+const savePref = (v) => {
+  try {
+    localStorage.setItem(SOUND_PREF, v);
+  } catch {}
+};
+
 const BASE = 48; // icon size in px at rest
 const MAX_SCALE = 1.6; // size of the icon right under the cursor
 const RANGE = 140; // px from the cursor where icons still grow
@@ -69,6 +83,56 @@ export default function Dock() {
   const pathName = usePathname();
   const [mouseX, setMouseX] = useState(null);
   const itemRefs = useRef([]);
+  const isHome = pathName === "/";
+
+  // Ambient sound (homepage only). The engine is loaded on demand so it costs nothing until used.
+  const [soundOn, setSoundOn] = useState(false);
+  const engineRef = useRef(null);
+  const loadEngine = () =>
+    engineRef.current
+      ? Promise.resolve(engineRef.current)
+      : import("@/utility/ambient").then((m) => (engineRef.current = m));
+
+  async function toggleSound() {
+    const engine = await loadEngine();
+    if (engine.isPlaying()) {
+      engine.stop();
+      setSoundOn(false);
+      savePref("off");
+    } else {
+      await engine.start();
+      setSoundOn(true);
+      savePref("on");
+    }
+  }
+
+  useEffect(() => {
+    if (!isHome) {
+      engineRef.current?.stop();
+      setSoundOn(false);
+      return;
+    }
+    if (readPref() !== "on") return;
+    // Browsers only allow audio after a user gesture: resume on the first interaction
+    const resume = () =>
+      loadEngine()
+        .then((engine) => engine.start())
+        .then(() => setSoundOn(true))
+        .catch(() => {});
+    if (navigator.userActivation?.hasBeenActive) {
+      resume();
+      return;
+    }
+    const events = ["pointerdown", "keydown", "touchstart"];
+    const cleanup = () => events.forEach((ev) => window.removeEventListener(ev, onGesture));
+    function onGesture(e) {
+      cleanup();
+      // A tap on the sound button itself is handled by its own toggle
+      if (!e.target.closest?.(".dock-sound")) resume();
+    }
+    events.forEach((ev) => window.addEventListener(ev, onGesture));
+    return cleanup;
+  }, [isHome]);
 
   function sizeFor(i) {
     const el = itemRefs.current[i];
@@ -120,6 +184,48 @@ export default function Dock() {
               </li>
             );
           })}
+          {isHome && (
+            <>
+              <li className="dock-divider" aria-hidden="true" />
+              <li ref={(el) => (itemRefs.current[items.length] = el)}>
+                <button
+                  type="button"
+                  className="dock-item dock-sound"
+                  aria-label={soundOn ? "Turn ambient sound off" : "Turn ambient sound on"}
+                  aria-pressed={soundOn}
+                  onClick={toggleSound}
+                  style={{ width: sizeFor(items.length), height: sizeFor(items.length) }}
+                >
+                  <span className="dock-label">{soundOn ? "Sound on" : "Sound off"}</span>
+                  <span className="dock-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M11 5 6 9H3v6h3l5 4V5z" />
+                      {soundOn ? (
+                        <>
+                          <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                          <path d="M18.5 5.5a9 9 0 0 1 0 13" />
+                        </>
+                      ) : (
+                        <>
+                          <line x1="16" y1="9" x2="22" y2="15" />
+                          <line x1="22" y1="9" x2="16" y2="15" />
+                        </>
+                      )}
+                    </svg>
+                  </span>
+                </button>
+                <span className={`dock-dot${soundOn ? " dock-dot--active" : ""}`} />
+              </li>
+            </>
+          )}
         </ul>
       </nav>
 
@@ -158,6 +264,11 @@ export default function Dock() {
         .dock-item {
           position: relative;
           display: block;
+          padding: 0;
+          border: 0;
+          background: none;
+          cursor: pointer;
+          font: inherit;
           transition: width 0.12s ease-out, height 0.12s ease-out;
         }
         .dock-icon {
@@ -180,7 +291,8 @@ export default function Dock() {
           color: #ffbd4a;
           border-color: #ffbd4a;
         }
-        .dock-item[aria-current="page"] .dock-icon {
+        .dock-item[aria-current="page"] .dock-icon,
+        .dock-item[aria-pressed="true"] .dock-icon {
           color: #ffbd4a;
         }
         .dock-item:active .dock-icon {
@@ -196,7 +308,7 @@ export default function Dock() {
           background: #171818;
           border: 1px solid #343434;
           color: #fff;
-          font-family: "Montserrat", sans-serif;
+          font-family: var(--font-montserrat), sans-serif;
           font-size: 13px;
           font-weight: 600;
           line-height: 1.2;
@@ -225,6 +337,13 @@ export default function Dock() {
         .dock-item:focus-visible .dock-icon {
           border-color: #ffbd4a;
         }
+        .dock-divider {
+          align-self: center;
+          width: 1px;
+          height: 34px;
+          margin: 0 2px 8px;
+          background: #343434;
+        }
         .dock-dot {
           width: 4px;
           height: 4px;
@@ -251,12 +370,16 @@ export default function Dock() {
             border-radius: 18px;
           }
           .dock ul {
-            height: 46px;
-            gap: 6px;
+            height: 42px;
+            gap: 5px;
           }
           .dock-item {
-            width: 38px !important;
-            height: 38px !important;
+            width: 34px !important;
+            height: 34px !important;
+          }
+          .dock-divider {
+            height: 26px;
+            margin-bottom: 6px;
           }
         }
       `}</style>

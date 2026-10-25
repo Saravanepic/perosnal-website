@@ -26,10 +26,10 @@ const Hero = () => {
               </h1>
             </div>
             <div className="right">
-              <h3 className="hero-blur-in" style={{ "--d": "0.3s" }}>
+              <h2 className="hero-blur-in" style={{ "--d": "0.3s" }}>
                 <span className="inline_text">Shopify &amp; Web<br/>developer</span>
-              </h3>
-              <h3 className="stroke_text hero-blur-in" style={{ "--d": "0.45s" }}>Based in Bangalore</h3>
+              </h2>
+              <h2 className="stroke_text hero-blur-in" style={{ "--d": "0.45s" }}>Based in Bangalore</h2>
             </div>
           </div>
           <div className="hero_scroll_title">
@@ -111,7 +111,7 @@ const Hero = () => {
                         </a>
                       </li> */}
                       <li>
-                        <a href="https://www.linkedin.com/in/saravana-krishna/">
+                        <a href="https://www.linkedin.com/in/saravana-krishna/" aria-label="Saravan on LinkedIn" target="_blank" rel="noopener noreferrer">
                           <img
                             className="sm_svg"
                             src="img/svg/linkedin.svg"

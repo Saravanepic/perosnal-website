@@ -501,7 +501,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/insti.webp" alt="" />
+                    <img src="img/portfolio/insti.webp" alt="Shop Insti website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -511,7 +511,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://insti-shop.myshopify.com//">
+                      <Link href="https://insti-shop.myshopify.com//" target="_blank" aria-label="Visit Shop Insti" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -525,7 +525,7 @@ const Portfolio = ({ noTitle = false }) => {
                <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ojjsea.webp" alt="" />
+                    <img src="img/portfolio/ojjsea.webp" alt="Ojjsea website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -535,7 +535,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://ojjsea.myshopify.com/">
+                      <Link href="https://ojjsea.myshopify.com/" target="_blank" aria-label="Visit Ojjsea" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -549,7 +549,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/wtn.webp" alt="" />
+                    <img src="img/portfolio/wtn.webp" alt="WeartoNext website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -559,7 +559,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://weartonext.in/">
+                      <Link href="https://weartonext.in/" target="_blank" aria-label="Visit WeartoNext" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -573,7 +573,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ettetete.webp" alt="" />
+                    <img src="img/portfolio/ettetete.webp" alt="Ettetete website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -583,7 +583,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://ettetete.com/">
+                      <Link href="https://ettetete.com/" target="_blank" aria-label="Visit Ettetete" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -597,7 +597,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mightylucky.webp" alt="" />
+                    <img src="img/portfolio/mightylucky.webp" alt="Mighty Lucky website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -607,7 +607,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://mighty-lucky.com/">
+                      <Link href="https://mighty-lucky.com/" target="_blank" aria-label="Visit Mighty Lucky" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -621,7 +621,7 @@ const Portfolio = ({ noTitle = false }) => {
             <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/taproots.webp" alt="" />
+                    <img src="img/portfolio/taproots.webp" alt="Taproots website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -631,7 +631,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://taprootsva.com/">
+                      <Link href="https://taprootsva.com/" target="_blank" aria-label="Visit Taproots" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -645,7 +645,7 @@ const Portfolio = ({ noTitle = false }) => {
                  <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/ENVSN.webp" alt="" />
+                    <img src="img/portfolio/ENVSN.webp" alt="ENVSN website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -655,7 +655,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://envsnfestival.com/">
+                      <Link href="https://envsnfestival.com/" target="_blank" aria-label="Visit ENVSN" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -669,7 +669,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/TWN.webp" alt="" />
+                    <img src="img/portfolio/TWN.webp" alt="TWN website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -679,7 +679,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://twn-shop-store.myshopify.com/">
+                      <Link href="https://twn-shop-store.myshopify.com/" target="_blank" aria-label="Visit TWN" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -693,7 +693,7 @@ const Portfolio = ({ noTitle = false }) => {
                 <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/EG.webp" alt="" />
+                    <img src="img/portfolio/EG.webp" alt="Enter Gallery website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -703,7 +703,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                    <Link href="https://entergallery.com/" target="_blank">
+                    <Link href="https://entergallery.com/" target="_blank" aria-label="Visit Enter Gallery" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -717,7 +717,7 @@ const Portfolio = ({ noTitle = false }) => {
               {/* <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/mutual.webp" alt="" />
+                    <img src="img/portfolio/mutual.webp" alt="amutualspace website screenshot" />
                   </div>
                   <div className="title_holder">
                     <div className="left">
@@ -727,7 +727,7 @@ const Portfolio = ({ noTitle = false }) => {
                       </h3>
                     </div>
                     <div className="right">
-                      <Link href="https://mutuals.co.in/">
+                      <Link href="https://mutuals.co.in/" target="_blank" aria-label="Visit amutualspace" rel="noopener noreferrer">
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -756,7 +756,7 @@ const Portfolio = ({ noTitle = false }) => {
                       <span className="tag">{item.tag}</span>
                     </div>
                     <div className="project_link">
-                      <Link href={item.url} target="_blank">
+                      <Link href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${item.name}`}>
                             <img
                               className="sm_svg"
                               src="img/svg/down_arrow.svg"
@@ -799,7 +799,7 @@ const Portfolio = ({ noTitle = false }) => {
                       <span className="tag">{item.tag}</span>
                     </div>
                     <div className="project_link">
-                      <Link href={item.url} target="_blank">
+                      <Link href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${item.name}`}>
                             <img
                               className="sm_svg"
                               src="img/svg/down_arrow.svg"
@@ -825,7 +825,7 @@ const Portfolio = ({ noTitle = false }) => {
                       <span className="tag">{item.tag}</span>
                     </div>
                     <div className="project_link">
-                      <Link href={item.url} target="_blank">
+                      <Link href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${item.name}`}>
                             <img
                               className="sm_svg"
                               src="img/svg/down_arrow.svg"

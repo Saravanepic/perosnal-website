@@ -17,7 +17,7 @@ const Copyright = () => {
             </div>
             <div className="nicolas_sm_totop">
               <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
-              <a className="nicolas_sm_full_link" href="#" />
+              <a className="nicolas_sm_full_link" href="#" aria-label="Back to top" />
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ export const Copyright2 = () => {
           </div>
           <div className="nicolas_sm_totop">
             <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
-            <a className="nicolas_sm_full_link" href="#" />
+            <a className="nicolas_sm_full_link" href="#" aria-label="Back to top" />
           </div>
         </div>
       </div>

@@ -32,10 +32,6 @@ const Service = ({ title = "My services", sectionNumber = "03", servicePage = fa
                       <div className="list_inner">
                         <span className="number">I</span>
                         <h3 className="title"> Shopify Website Development</h3>
-                        <Link
-                          className="nicolas_sm_full_link"
-                          href=""
-                        />
                         <img
                           className="interactive_image"
                           src="img/portfolio/1.jpg"
@@ -47,10 +43,6 @@ const Service = ({ title = "My services", sectionNumber = "03", servicePage = fa
                       <div className="list_inner">
                         <span className="number">II</span>
                         <h3 className="title">Wordpress Website Development</h3>
-                        <Link
-                          className="nicolas_sm_full_link"
-                          href=""
-                        />
                         <img
                           className="interactive_image"
                           src="img/portfolio/2.jpg"
@@ -62,10 +54,6 @@ const Service = ({ title = "My services", sectionNumber = "03", servicePage = fa
                       <div className="list_inner">
                         <span className="number">III</span>
                         <h3 className="title">Website Development (via builders)</h3>
-                        <Link
-                          className="nicolas_sm_full_link"
-                          href=""
-                        />
                         <img
                           className="interactive_image"
                           src="img/portfolio/3.jpg"
@@ -77,10 +65,6 @@ const Service = ({ title = "My services", sectionNumber = "03", servicePage = fa
                       <div className="list_inner">
                         <span className="number">IV</span>
                         <h3 className="title">Front End (Design to HTML)</h3>
-                        <Link
-                          className="nicolas_sm_full_link"
-                          href=""
-                        />
                         <img
                           className="interactive_image"
                           src="img/portfolio/4.jpg"
@@ -92,10 +76,6 @@ const Service = ({ title = "My services", sectionNumber = "03", servicePage = fa
                       <div className="list_inner">
                         <span className="number">V</span>
                         <h3 className="title">Custom App / JS Solutions</h3>
-                        <Link
-                          className="nicolas_sm_full_link"
-                          href=""
-                        />
                         <img
                           className="interactive_image"
                           src="img/portfolio/5.jpg"

@@ -3,7 +3,6 @@ import Portfolio from "@/components/Portfolio";
 import WorkingProcess from "@/components/WorkingProcess";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import { sliderProps } from "@/utility/sliderProps";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 const page = () => {
   return (
@@ -47,10 +46,6 @@ const page = () => {
                       <h3>Shopify Development and Support</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
                <SwiperSlide className="swiper-slide">
@@ -65,10 +60,6 @@ const page = () => {
                       <h3>Shopify Development and Support</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -82,10 +73,6 @@ const page = () => {
                       <h3>Shopify Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -99,10 +86,6 @@ const page = () => {
                       <h3>Wordpress Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -116,10 +99,6 @@ const page = () => {
                       <h3>Wordpress Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -133,10 +112,6 @@ const page = () => {
                       <h3>Shopify Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -150,10 +125,6 @@ const page = () => {
                       <h3>Shopify Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -167,10 +138,6 @@ const page = () => {
                       <h3>Shopify Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -184,10 +151,6 @@ const page = () => {
                       <h3>Wordpress Development</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -201,10 +164,6 @@ const page = () => {
                       <h3>UI/UX Design Mockup</h3>
                     </div>
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href=""
-                  />
                 </div>
               </SwiperSlide>
           </Swiper>

@@ -76,7 +76,7 @@ const Pricing = () => {
                           alt=""
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Shopify Website" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Shopify Website" aria-label="Start a Shopify website project" />
                     </div>
                   </div>
                 </li>
@@ -139,7 +139,7 @@ const Pricing = () => {
                           alt=""
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Wordpress Website" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Looking to build a Wordpress Website" aria-label="Start a WordPress website project" />
                     </div>
                   </div>
                 </li>
@@ -190,7 +190,7 @@ const Pricing = () => {
                           alt=""
                         />
                       </span>
-                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Need help with custom development" />
+                      <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Need help with custom development" aria-label="Start a custom development project" />
                     </div>
                   </div>
                 </li>

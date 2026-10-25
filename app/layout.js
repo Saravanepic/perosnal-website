@@ -1,12 +1,20 @@
 import Preloader from "@/layouts/Preloader";
 import ContactWidget from "@/components/ContactWidget";
 import Dock from "@/components/Dock";
+import ClickSounds from "@/components/ClickSounds";
 import BackToTop from "@/components/BackToTop";
 import "@css/plugins.css";
 import "@css/style.css";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Bebas_Neue, Cabin, Montserrat } from "next/font/google";
+
+// Self-hosted by next/font: no render-blocking Google Fonts request, and metric-matched
+// fallbacks so text doesn't jump when the real font arrives (CLS). CSS uses the variables.
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat", display: "swap" });
+const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400", variable: "--font-bebas", display: "swap" });
+const cabin = Cabin({ subsets: ["latin"], variable: "--font-cabin", display: "swap" });
 
 
 export const metadata = {
@@ -258,14 +266,8 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${montserrat.variable} ${bebasNeue.variable} ${cabin.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -276,6 +278,7 @@ export default function RootLayout({ children }) {
         {children}
         <ContactWidget />
         <Dock />
+        <ClickSounds />
         <BackToTop />
         <Analytics />
         <SpeedInsights />

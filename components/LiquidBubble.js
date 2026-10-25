@@ -143,170 +143,225 @@ export default function LiquidBubble({ stops, reveal }) {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    const gl = canvas.getContext("webgl", { premultipliedAlpha: true, antialias: false, alpha: true });
-    const vs = gl && compile(gl, gl.VERTEX_SHADER, VERT);
-    const fs = gl && compile(gl, gl.FRAGMENT_SHADER, FRAG);
-    if (!gl || !vs || !fs) {
-      canvas.style.display = "none";
-      fallbackRef.current.style.display = "block";
-      return () => document.documentElement.classList.remove("has-liquid-bubble");
-    }
-    const prog = gl.createProgram();
-    gl.attachShader(prog, vs);
-    gl.attachShader(prog, fs);
-    gl.linkProgram(prog);
-    gl.useProgram(prog);
-
-    const buf = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-    const aPos = gl.getAttribLocation(prog, "aPos");
-    gl.enableVertexAttribArray(aPos);
-    gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
-    gl.enable(gl.BLEND);
-    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-
-    const U = {};
-    ["uRes", "uTime", "uPos", "uRadius", "uMouse", "uAlpha", "uSteps"].forEach(
-      (n) => (U[n] = gl.getUniformLocation(prog, n))
-    );
-    gl.uniform1f(U.uSteps, isMobile ? 36 : 56);
-
-    // Render below native resolution: the bubble is soft, so this is invisible but saves a lot of GPU
-    const dprCap = isMobile ? 1 : 1.25;
-    const resScale = isMobile ? 0.6 : 0.8;
-    let width = 0, height = 0;
-    function resize() {
-      const dpr = Math.min(window.devicePixelRatio || 1, dprCap) * resScale;
-      width = Math.round(window.innerWidth * dpr);
-      height = Math.round(window.innerHeight * dpr);
-      canvas.width = width;
-      canvas.height = height;
-      gl.viewport(0, 0, width, height);
-      gl.uniform2f(U.uRes, width, height);
-      measure();
-    }
-
-    // Scroll anchors: where each stop's section sits in the page
-    let anchors = [];
-    function measure() {
-      anchors = stops
-        .map((s) => {
-          const el = document.querySelector(s.selector);
-          if (!el) return null;
-          const top = el.getBoundingClientRect().top + window.scrollY;
-          return { ...s, ...(isMobile && s.mobile), at: Math.max(0, top - window.innerHeight * 0.35) };
-        })
-        .filter(Boolean)
-        .sort((a, b) => a.at - b.at);
-    }
-
-    function target() {
-      if (!anchors.length) return { x: 0, y: 0, scale: 0, alpha: 0 };
-      const y = window.scrollY;
-      if (y <= anchors[0].at) return anchors[0];
-      for (let i = 0; i < anchors.length - 1; i++) {
-        const a = anchors[i], b = anchors[i + 1];
-        if (y < b.at) {
-          const t = smooth((y - a.at) / Math.max(1, b.at - a.at));
-          return { x: lerp(a.x, b.x, t), y: lerp(a.y, b.y, t), scale: lerp(a.scale, b.scale, t), alpha: lerp(a.alpha, b.alpha, t) };
-        }
-      }
-      return anchors[anchors.length - 1];
-    }
-
-    const state = { ...target() };
-    const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
-    const onMouse = (e) => {
-      mouse.tx = (e.clientX / window.innerWidth) * 2 - 1;
-      mouse.ty = (e.clientY / window.innerHeight) * 2 - 1;
+    // Start only once the page has loaded and the browser is idle, so the bubble never
+    // competes with the initial render (keeps FCP/LCP/TBT clean)
+    let teardown = null;
+    let cancelled = false;
+    let idleId = 0;
+    let timer = 0;
+    const begin = () => {
+      if (!cancelled) teardown = setup();
     };
-
-    let raf = 0;
-    let running = false;
-    const start = performance.now();
-    function draw(time) {
-      const goal = target();
-      const k = reduceMotion ? 1 : 0.08;
-      state.x = lerp(state.x, goal.x, k);
-      state.y = lerp(state.y, goal.y, k);
-      state.scale = lerp(state.scale, goal.scale, k);
-      state.alpha = lerp(state.alpha, goal.alpha, k);
-      mouse.x = lerp(mouse.x, mouse.tx, 0.05);
-      mouse.y = lerp(mouse.y, mouse.ty, 0.05);
-
-      const aspect = width / height;
-      const half = 0.5 * Math.min(aspect, 1);
-      gl.uniform2f(U.uPos, state.x * 0.5 * aspect, -state.y * 0.5);
-      gl.uniform1f(U.uRadius, Math.max(0.001, state.scale * half));
-      gl.uniform2f(U.uMouse, mouse.x, mouse.y);
-      gl.uniform1f(U.uAlpha, state.alpha);
-      gl.uniform1f(U.uTime, reduceMotion ? 12.0 : (time - start) / 1000);
-      gl.clearColor(0, 0, 0, 0);
-      gl.clear(gl.COLOR_BUFFER_BIT);
-      if (state.alpha > 0.005) gl.drawArrays(gl.TRIANGLES, 0, 3);
-      if (reveal) updateReveal(aspect, half);
-    }
-
-    // Bubble circle in CSS pixels vs. each reveal element's box
-    function updateReveal(aspect, half) {
-      const vw = window.innerWidth, vh = window.innerHeight;
-      const cx = vw / 2 + (state.x * vw) / 2;
-      const cy = vh / 2 + (state.y * vh) / 2;
-      const r = state.scale * half * vh * 0.9;
-      document.querySelectorAll(reveal).forEach((el) => {
-        const b = el.getBoundingClientRect();
-        const dx = cx - Math.max(b.left, Math.min(cx, b.right));
-        const dy = cy - Math.max(b.top, Math.min(cy, b.bottom));
-        const behind = state.alpha > 0.3 && dx * dx + dy * dy < r * r;
-        if (el.classList.contains("bubble-behind") !== behind) el.classList.toggle("bubble-behind", behind);
-      });
-    }
-
-    function loop(time) {
-      draw(time);
-      raf = requestAnimationFrame(loop);
-    }
-    function play() {
-      if (running || reduceMotion) return;
-      running = true;
-      raf = requestAnimationFrame(loop);
-    }
-    function pause() {
-      running = false;
-      cancelAnimationFrame(raf);
-    }
-    const onVisibility = () => (document.hidden ? pause() : play());
-    // With reduced motion there is no animation loop: just redraw the still bubble on scroll
-    const onScroll = () => reduceMotion && requestAnimationFrame(draw);
-
-    const ro = new ResizeObserver(measure);
-    ro.observe(document.body);
-    window.addEventListener("resize", resize);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    if (!isMobile) window.addEventListener("mousemove", onMouse, { passive: true });
-    document.addEventListener("visibilitychange", onVisibility);
-
-    resize();
-    Object.assign(state, target());
-    draw(start);
-    play();
+    const schedule = () => {
+      if ("requestIdleCallback" in window) idleId = window.requestIdleCallback(begin, { timeout: 2000 });
+      else timer = setTimeout(begin, 300);
+    };
+    if (document.readyState === "complete") schedule();
+    else window.addEventListener("load", schedule, { once: true });
 
     return () => {
+      cancelled = true;
+      window.removeEventListener("load", schedule);
+      if (idleId) window.cancelIdleCallback(idleId);
+      clearTimeout(timer);
+      teardown?.();
       document.documentElement.classList.remove("has-liquid-bubble");
-      pause();
-      ro.disconnect();
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("mousemove", onMouse);
-      document.removeEventListener("visibilitychange", onVisibility);
-      // Free GPU objects but keep the context: the canvas can be re-mounted (React dev
-      // double-mount) and getContext() would hand back a lost context otherwise
-      gl.deleteBuffer(buf);
-      gl.deleteProgram(prog);
-      gl.deleteShader(vs);
-      gl.deleteShader(fs);
     };
+
+    function showFallback() {
+      canvas.style.display = "none";
+      fallbackRef.current.style.display = "block";
+      return null;
+    }
+
+    function setup() {
+      // Refuse software rendering (no GPU, e.g. PageSpeed's test machines or very old devices):
+      // a raymarching shader there blocks the main thread for seconds, so show the CSS glow instead
+      const gl = canvas.getContext("webgl", {
+        premultipliedAlpha: true,
+        antialias: false,
+        alpha: true,
+        failIfMajorPerformanceCaveat: true,
+      });
+      if (!gl) return showFallback();
+      const dbg = gl.getExtension("WEBGL_debug_renderer_info");
+      const renderer = dbg ? String(gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) : "";
+      if (/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer)) return showFallback();
+      const vs = compile(gl, gl.VERTEX_SHADER, VERT);
+      const fs = compile(gl, gl.FRAGMENT_SHADER, FRAG);
+      if (!vs || !fs) return showFallback();
+      const prog = gl.createProgram();
+      gl.attachShader(prog, vs);
+      gl.attachShader(prog, fs);
+      gl.linkProgram(prog);
+      gl.useProgram(prog);
+
+      const buf = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+      const aPos = gl.getAttribLocation(prog, "aPos");
+      gl.enableVertexAttribArray(aPos);
+      gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+      gl.enable(gl.BLEND);
+      gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+      const U = {};
+      ["uRes", "uTime", "uPos", "uRadius", "uMouse", "uAlpha", "uSteps"].forEach(
+        (n) => (U[n] = gl.getUniformLocation(prog, n))
+      );
+      gl.uniform1f(U.uSteps, isMobile ? 36 : 56);
+
+      // Render below native resolution: the bubble is soft, so this is invisible but saves a lot of GPU
+      const dprCap = isMobile ? 1 : 1.25;
+      const resScale = isMobile ? 0.6 : 0.8;
+      let width = 0, height = 0;
+      function resize() {
+        const dpr = Math.min(window.devicePixelRatio || 1, dprCap) * resScale;
+        width = Math.round(window.innerWidth * dpr);
+        height = Math.round(window.innerHeight * dpr);
+        canvas.width = width;
+        canvas.height = height;
+        gl.viewport(0, 0, width, height);
+        gl.uniform2f(U.uRes, width, height);
+        measure();
+      }
+
+      // Scroll anchors: where each stop's section sits in the page
+      let anchors = [];
+      function measure() {
+        anchors = stops
+          .map((s) => {
+            const el = document.querySelector(s.selector);
+            if (!el) return null;
+            const top = el.getBoundingClientRect().top + window.scrollY;
+            return { ...s, ...(isMobile && s.mobile), at: Math.max(0, top - window.innerHeight * 0.35) };
+          })
+          .filter(Boolean)
+          .sort((a, b) => a.at - b.at);
+      }
+
+      function target() {
+        if (!anchors.length) return { x: 0, y: 0, scale: 0, alpha: 0 };
+        const y = window.scrollY;
+        if (y <= anchors[0].at) return anchors[0];
+        for (let i = 0; i < anchors.length - 1; i++) {
+          const a = anchors[i], b = anchors[i + 1];
+          if (y < b.at) {
+            const t = smooth((y - a.at) / Math.max(1, b.at - a.at));
+            return { x: lerp(a.x, b.x, t), y: lerp(a.y, b.y, t), scale: lerp(a.scale, b.scale, t), alpha: lerp(a.alpha, b.alpha, t) };
+          }
+        }
+        return anchors[anchors.length - 1];
+      }
+
+      const state = { ...target() };
+      const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
+      const onMouse = (e) => {
+        mouse.tx = (e.clientX / window.innerWidth) * 2 - 1;
+        mouse.ty = (e.clientY / window.innerHeight) * 2 - 1;
+      };
+
+      let raf = 0;
+      let running = false;
+      const start = performance.now();
+      function draw(time) {
+        const goal = target();
+        const k = staticMode ? 1 : 0.08;
+        state.x = lerp(state.x, goal.x, k);
+        state.y = lerp(state.y, goal.y, k);
+        state.scale = lerp(state.scale, goal.scale, k);
+        state.alpha = lerp(state.alpha, goal.alpha, k);
+        mouse.x = lerp(mouse.x, mouse.tx, 0.05);
+        mouse.y = lerp(mouse.y, mouse.ty, 0.05);
+
+        const aspect = width / height;
+        const half = 0.5 * Math.min(aspect, 1);
+        gl.uniform2f(U.uPos, state.x * 0.5 * aspect, -state.y * 0.5);
+        gl.uniform1f(U.uRadius, Math.max(0.001, state.scale * half));
+        gl.uniform2f(U.uMouse, mouse.x, mouse.y);
+        gl.uniform1f(U.uAlpha, state.alpha);
+        gl.uniform1f(U.uTime, reduceMotion ? 12.0 : (time - start) / 1000);
+        gl.clearColor(0, 0, 0, 0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        if (state.alpha > 0.005) gl.drawArrays(gl.TRIANGLES, 0, 3);
+        if (reveal) updateReveal(aspect, half);
+      }
+
+      // Bubble circle in CSS pixels vs. each reveal element's box
+      function updateReveal(aspect, half) {
+        const vw = window.innerWidth, vh = window.innerHeight;
+        const cx = vw / 2 + (state.x * vw) / 2;
+        const cy = vh / 2 + (state.y * vh) / 2;
+        const r = state.scale * half * vh * 0.9;
+        document.querySelectorAll(reveal).forEach((el) => {
+          const b = el.getBoundingClientRect();
+          const dx = cx - Math.max(b.left, Math.min(cx, b.right));
+          const dy = cy - Math.max(b.top, Math.min(cy, b.bottom));
+          const behind = state.alpha > 0.3 && dx * dx + dy * dy < r * r;
+          if (el.classList.contains("bubble-behind") !== behind) el.classList.toggle("bubble-behind", behind);
+        });
+      }
+
+      // If the device can't keep up (most of the first ~60 frames slower than 20fps),
+      // stop animating and keep a still bubble that only follows the scroll
+      let staticMode = reduceMotion;
+      let last = 0, frames = 0, slow = 0;
+      function loop(time) {
+        draw(time);
+        if (last) {
+          frames++;
+          if (time - last > 50) slow++;
+          if (frames === 60 && slow > 30) {
+            staticMode = true;
+            pause();
+            return;
+          }
+        }
+        last = time;
+        raf = requestAnimationFrame(loop);
+      }
+      function play() {
+        if (running || staticMode) return;
+        running = true;
+        last = 0;
+        raf = requestAnimationFrame(loop);
+      }
+      function pause() {
+        running = false;
+        cancelAnimationFrame(raf);
+      }
+      const onVisibility = () => (document.hidden ? pause() : play());
+      // Without the animation loop (reduced motion / slow device): redraw the still bubble on scroll
+      const onScroll = () => staticMode && requestAnimationFrame(draw);
+
+      const ro = new ResizeObserver(measure);
+      ro.observe(document.body);
+      window.addEventListener("resize", resize);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      if (!isMobile) window.addEventListener("mousemove", onMouse, { passive: true });
+      document.addEventListener("visibilitychange", onVisibility);
+
+      resize();
+      Object.assign(state, target());
+      state.alpha = 0; // fade in rather than pop in
+      draw(start);
+      play();
+
+      return () => {
+        pause();
+        ro.disconnect();
+        window.removeEventListener("resize", resize);
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("mousemove", onMouse);
+        document.removeEventListener("visibilitychange", onVisibility);
+        // Free GPU objects but keep the context: the canvas can be re-mounted (React dev
+        // double-mount) and getContext() would hand back a lost context otherwise
+        gl.deleteBuffer(buf);
+        gl.deleteProgram(prog);
+        gl.deleteShader(vs);
+        gl.deleteShader(fs);
+      };
+    }
   }, [stops, reveal]);
 
   return (

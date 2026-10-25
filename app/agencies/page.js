@@ -225,7 +225,7 @@ const page = () => {
                         <span>
                           <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                         </span>
-                        <a className="nicolas_sm_full_link" href={WA_LINK} target="_blank" rel="noopener noreferrer" />
+                        <a className="nicolas_sm_full_link" href={WA_LINK} target="_blank" rel="noopener noreferrer" aria-label="Reserve retainer capacity on WhatsApp" />
                       </div>
                     </div>
                   </li>
@@ -272,7 +272,7 @@ const page = () => {
                         <span>
                           <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                         </span>
-                        <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Agency project brief" />
+                        <a className="nicolas_sm_full_link" href="mailto:saravan1996.krishna@gmail.com?subject=Agency project brief" aria-label="Send a project brief by email" />
                       </div>
                     </div>
                   </li>
@@ -311,7 +311,7 @@ const page = () => {
                         <span>
                           <img className="sm_svg" src="img/svg/down_arrow.svg" alt="" />
                         </span>
-                        <a className="nicolas_sm_full_link" href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" />
+                        <a className="nicolas_sm_full_link" href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" aria-label="Book a call" />
                       </div>
                     </div>
                   </li>
